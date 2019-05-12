@@ -8,6 +8,8 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <h1>CSS Methodologies</h1>
+    <Link to="/bem/main">Bem</Link>
+    <Link to="atomic-design/main">Atomic Design</Link>
   </Layout>
 )
 
