@@ -12,7 +12,6 @@ import { StaticQuery, graphql } from "gatsby"
 const Layout = ({ children }) => {
 
   function getMenuItems(data) {
-    console.log(data);
     return (
       data.dataJson.menu.map(item => {
         return (
