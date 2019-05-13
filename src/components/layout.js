@@ -10,19 +10,30 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 const Layout = ({ children }) => {
+
+  function getMenuItems(data) {
+    console.log(data);
+    return (
+      data.dataJson.menu.map(item => {
+        return (
+          <li>{item}</li>
+        )
+      })
+    );
+  }
+
   return (
     <StaticQuery
       query={graphql`
-        query SiteTitleQuery {
-          site {
-            siteMetadata {
-              title
-            }
+        query menuQuery {
+          dataJson {
+            menu
           }
         }
       `}
       render={data => (
         <>
+        <p>{getMenuItems(data)}</p>
           <main>{children}</main>
           <footer>
           </footer>
