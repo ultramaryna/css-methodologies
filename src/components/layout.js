@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
       `}
       render={data => (
         <>
-        <p>{getMenuItems(data)}</p>
+        <ul>{getMenuItems(data)}</ul>
           <main>{children}</main>
           <footer>
           </footer>

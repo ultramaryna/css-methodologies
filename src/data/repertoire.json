@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Skrzypek na dachu",
+    "theatres": [
+      {
+        "name": "Teatr Muzyczny w Chożowie",
+        "months": [
+          {
+            "październik": [
+              {
+                "day": "12",
+                "hour": "18:00"
+              }, {
+                "day": "13",
+                "hour": "18:00"
+              }, {
+                "day": "19",
+                "hour": "18:00"
+              }, {
+                "day": "20",
+                "hour": "21:00"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }, {
+    "name": "Aida",
+    "theatres": [
+      {
+        "name": "Teatr ROMA w Warszawie",
+        "months": {
+          "październik": [
+            {
+              "day": "1",
+              "hour": "15:00"
+            }, {
+              "day": "1",
+              "hour": "19:00"
+            }, {
+              "day": "2",
+              "hour": "19:00"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]
