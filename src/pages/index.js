@@ -2,14 +2,13 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
-    <h1>CSS Methodologies</h1>
-    <Link to="/bem/main">Bem</Link>
-    <Link to="atomic-design/main">Atomic Design</Link>
+const IndexPage = ({ location }) => (
+
+  <Layout location={location}>
+    <SEO title="Metodyki CSS - BEM" keywords={[`css`, `metodyki css`, `bem`, `bem css`, `css methodologies`]} />
+    <h1>BEM</h1>
   </Layout>
 )
 
