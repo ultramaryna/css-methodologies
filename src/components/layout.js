@@ -12,10 +12,11 @@ import { StaticQuery, graphql } from "gatsby"
 const Layout = ({ children }) => {
 
   function getMenuItems(data) {
+    console.log(data);
     return (
-      data.dataJson.menu.map(item => {
+      data.allMenuJson.edges.map(item => {
         return (
-          <li>{item}</li>
+          <li>{item.node.title}</li>
         )
       })
     );
@@ -25,14 +26,19 @@ const Layout = ({ children }) => {
     <StaticQuery
       query={graphql`
         query menuQuery {
-          dataJson {
-            menu
+          allMenuJson {
+            edges {
+              node {
+                title,
+                link
+              }
+            }
           }
         }
       `}
       render={data => (
         <>
-        <p>{getMenuItems(data)}</p>
+        <ul>{getMenuItems(data)}</ul>
           <main>{children}</main>
           <footer>
           </footer>

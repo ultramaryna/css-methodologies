@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Jane Doe",
+    "image": "/team/janedoe.jpg",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  }, {
+    "name": "Anna Kowalska",
+    "image": "/team/annakowalska.jpg",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  }, {
+    "name": "Jon Snow",
+    "image": "/team/jonsnow.jpg",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  }, {
+    "name": "Maria Nowak",
+    "image": "/team/annanowak.jpg",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  }, {
+    "name": "Jan Kowalski",
+    "image": "/team/jankowalski.jpg",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  }
+]

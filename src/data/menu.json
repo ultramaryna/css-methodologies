@@ -1,8 +1,15 @@
-{
-  "menu": [
-    "Repertuar",
-    "Premiery",
-    "Artykuły",
-    "Twórcy"
-  ]
-}
+[
+  {
+    "title": "Repertuar",
+    "link": "#repertoire"
+  }, {
+    "title": "Premiery",
+    "link": "#premieres"
+  }, {
+    "title": "Artykuły",
+    "link": "#blog"
+  }, {
+    "title": "Twórcy",
+    "link": "#artists"
+  }
+]
