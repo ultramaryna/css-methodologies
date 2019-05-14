@@ -1,0 +1,46 @@
+body {
+    font-family: $font-default;
+    font-size: 1rem;
+    font-weight: 400;
+    color: $text-color;
+    line-height: $line-height;
+}
+
+.heading {
+    font-family: $font-headings;
+    line-height: $line-height;
+    margin-bottom: 30px;
+}
+
+.heading--main {
+    font-family: $font-decorative;
+    font-size: 2.25rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    @media (min-width: $bp-main) {
+        font-size: 5.625rem;
+    }
+}
+
+.paragraph {
+    margin-bottom: 20px;
+}
+
+.link {
+    color: $text-color;
+    position: relative;
+    text-decoration: none;
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 10px;
+        background-color: $teal-lighter;
+        z-index: -1;
+    }
+    &:hover, &:visited {
+        color: $text-color;
+    }
+}

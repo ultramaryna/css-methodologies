@@ -1,0 +1,39 @@
+// colors
+$black: #000;
+$grey: #262A2C;
+$warm-grey: #4A404D;
+$grey-lighter: #4C4F51;
+$grey-light: #C5C2C6;
+$white: #fff;
+$violet: #9F46BB;
+$purple: #905A9F;
+$purple-lighter: #BF77D3;
+$teal: #58B8A8;
+$teal-lighter: #42DCC3;
+$turqoise: #469BAD;
+$turqoise-lighter: #49C0D9;
+$yellow: #D9AE2E;
+$brown: #9B7811;
+$blue: #47658F;
+$blue-lighter: #6F8FBB;
+
+// responsive
+$screen-sm: 480px;
+$screen-md: 768px;
+$screen-lg: 1000px;
+
+$bp-main: $screen-md;
+$content__width: 1200px;
+
+// typography
+$font-decorative: 'Monoton', sans-serif;
+$font-headings: 'Josefin Sans', sans-serif;
+$font-text: 'Raleway', sans-serif;
+
+$font-default: $font-text;
+$line-height: 1.5;
+$text-color: $grey;
+
+
+// margins
+$margin-mobile: 20px;

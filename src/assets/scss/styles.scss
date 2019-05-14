@@ -1,3 +1,10 @@
-h1 {
-    font-family: 'Monoton';
-}
+// helpers
+@import 'helpers/var';
+
+// base
+@import 'base/reset';
+@import 'base/base';
+@import 'base/buttons';
+
+// modules
+@import 'modules/hero';
