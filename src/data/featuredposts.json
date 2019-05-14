@@ -1,12 +1,21 @@
 [
   {
     "title": "Lorem ipsum",
-    "image": "/posts/sadness.jpg"
+    "image": {
+      "name": "Dziewczyna na scenie",
+      "src": "../images/posts/sadness.jpg"
+    }
   }, {
     "title": "Lorem ipsum",
-    "image": "/posts/theatre.jpg"
+    "image": {
+      "name": "Siedzenia w teatrze",
+      "src": "../images/posts/theatre.jpg"
+    }
   }, {
     "title": "Lorem ipsum, dolor sit amet",
-    "image": "/posts/car.jpg"
+    "image": {
+      "name": "Samochód w mieście",
+      "src": "../images/posts/car.jpg"
+    }
   }
 ]

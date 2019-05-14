@@ -1,0 +1,16 @@
+.section {
+    padding: 80px 0;
+}
+
+.section__content {
+    padding: 0 $margin-mobile;
+    max-width: $content__width;
+    margin: 0 auto;
+    @media (min-width: $bp-main) {
+        padding: 0 $margin-desktop;
+    }
+}
+
+.section--featured-posts {
+    background-color: $grey;
+}
