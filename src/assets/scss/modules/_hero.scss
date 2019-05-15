@@ -6,6 +6,7 @@
     background-image: url(../images/hero.jpg);
     background-size: cover;
     background-position: center;
+    z-index: 1;
     &:after {
         content: '';
         position: absolute;
@@ -14,6 +15,7 @@
         width: 100%;
         height: 264px;
         background: linear-gradient(180deg, rgba(38,42,44,0) 0%, #262A2C 78.16%, #262A2C 100%);
+        z-index: -1;
     }
     @media (min-width: $bp-main) {
         padding-top: 220px;

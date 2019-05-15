@@ -6,7 +6,7 @@ const PostBlock = ({post}) => (
   <article className="posts__item">
     <img src={post.image} className="posts__image"/>
     <h2 className="heading posts__title">{post.title}</h2>
-    <Link to="/" className="btn posts__link">Czytaj</Link>
+    <Link to="/" className="btn btn--secondary posts__link">Czytaj</Link>
   </article>
 )
 
