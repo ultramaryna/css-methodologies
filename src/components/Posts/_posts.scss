@@ -1,0 +1,39 @@
+.posts {
+    @media (min-width: $bp-main) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.posts__item {
+    @media (min-width: $bp-main) {
+        width: calc((100% - 80px) / 3);
+    }
+    @media (min-width: $screen-lg) {
+        width: calc((100% - 120px) / 3);
+    }
+}
+
+.posts__image {
+    max-width: 100%;
+    margin-bottom: 33px;
+}
+
+.posts__title {
+    font-size: 26px;
+    line-height: 32px;
+    min-height: 64px;
+    letter-spacing: 3px;
+    color: $white;
+    margin-bottom: 36px;
+}
+
+.posts--horizontal {
+    flex-direction: column;
+}
+
+.posts--horizontal {
+    .posts__item {
+        width: 100%;
+    }
+}

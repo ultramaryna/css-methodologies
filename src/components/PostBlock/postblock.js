@@ -4,7 +4,7 @@ import React from "react"
 
 const PostBlock = ({post}) => (
   <article className="posts__item">
-    <img src={post.image} className="posts__image"/>
+    <img src={post.image.src} className="posts__image"/>
     <h2 className="heading posts__title">{post.title}</h2>
     <Link to="/" className="btn btn--secondary posts__link">Czytaj</Link>
   </article>

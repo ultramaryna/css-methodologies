@@ -2,9 +2,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
-import PostBlock from './postblock'
+import PostBlock from '../PostBlock/postblock'
 
-const Posts = ({sectionName}) => {
+const Posts = ({version}) => {
 
   function getPosts(data) {
     console.log(data);
@@ -35,7 +35,7 @@ const Posts = ({sectionName}) => {
         }
       `}
       render={data => (
-        <div className="posts">
+        <div className={`posts posts--${version}`}>
           {getPosts(data)}
         </div>
       )}

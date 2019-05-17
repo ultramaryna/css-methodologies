@@ -31,3 +31,11 @@
         background-image: linear-gradient(45deg, #2E3134, #42DCC3);
     }
 }
+
+.btn--alter {
+    border-image: linear-gradient(45deg, #6FF7E0 0%, #FC69EE 50%, #8519A3 100%);
+    border-image-slice: 1;
+    &:hover {
+        background-image: linear-gradient(45deg, #6FF7E0 0%, #FC69EE 50%, #8519A3 100%);
+    }
+}

@@ -1,5 +1,6 @@
 // helpers
 @import 'helpers/var';
+@import 'helpers/mixins';
 
 // base
 @import 'base/reset';
@@ -8,5 +9,9 @@
 @import 'base/buttons';
 
 // modules
-@import 'modules/section';
-@import 'modules/hero';
+@import '../../components/Section/section';
+@import '../../components/Hero/hero';
+@import '../../components/Posts/posts';
+@import '../../components/Header/header';
+@import '../../components/Header/components/Menu/menu';
+@import '../../components/Footer/footer';

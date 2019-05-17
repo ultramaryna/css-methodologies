@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 
-const HeroBanner = () => (
+const Hero = () => (
   <section className="hero">
     <div className="hero__content">
       <h1 className="heading--main hero__title">Nowa scena w Krakowie</h1>
@@ -11,4 +11,4 @@ const HeroBanner = () => (
   </section>
 )
 
-export default HeroBanner
+export default Hero

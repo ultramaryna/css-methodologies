@@ -4,19 +4,41 @@ body {
     font-weight: 400;
     color: $text-color;
     line-height: $line-height;
+    box-sizing: border-box;
 }
 
 .heading {
+    display: inline-block;
+    position: relative;
     font-family: $font-headings;
+    font-weight: 900;
     line-height: $line-height;
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 5.5px;
     margin-bottom: 30px;
+    z-index: 1;
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 20px;
+        background-color: $grey-lighter;
+        z-index: -1;
+    }
 }
 
 .heading--main {
     font-family: $font-decorative;
+    font-weight: 400;
     font-size: 2.25rem;
     letter-spacing: 4px;
     text-transform: uppercase;
+    &:after {
+        display: none;
+    }
     @media (min-width: $bp-main) {
         font-size: 5.625rem;
     }
