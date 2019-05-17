@@ -7,17 +7,17 @@
     background-color: $warm-grey;
     transition: .3s ease-in-out;
     z-index: 19;
-    @include wrapper();
     @media (min-width: $bp-main) {
         position: relative;
         top: auto;
         padding-top: 0;
         padding-bottom: 0;
+        @include wrapper();
     }
 }
 
 .menu--active {
-    top: 42px;
+    top: 41px;
 }
 
 .menu__list {
