@@ -12,7 +12,7 @@ const Premieres = () => {
             <a href={premiere.node.link} title={premiere.node.title}>
               <h3 className="premieres__title">{premiere.node.title}</h3>
               <picture className="premieres__picture">
-                <source media="(min-width: 768px)" srcset={premiere.node.images.desktop} />
+                <source media="(min-width: 768px)" srcSet={premiere.node.images.desktop} />
                 <img src={premiere.node.images.mobile} alt={premiere.node.title} className="premieres__img"/>
               </picture>
             </a>
@@ -41,7 +41,7 @@ const Premieres = () => {
           }
       `}
       render={data => (
-        <div class="premieres">
+        <div className="premieres">
           <h2 className="premieres__heading heading--main">Premiery</h2>
           <ul className="premieres__list">
             {renderPremieres(data)}

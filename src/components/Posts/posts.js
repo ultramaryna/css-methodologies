@@ -3,13 +3,21 @@ import { StaticQuery, graphql } from "gatsby"
 
 import PostBlock from '../PostBlock/postblock'
 
-const Posts = ({version}) => {
+const Posts = ({version, isFeatured}) => {
 
   function getPosts(data) {
+    let { allPostsJson: { edges: posts } } = data;
+
+    if (isFeatured) {
+      posts = data.allFeaturedJson.edges;
+    }
+
+    console.log(posts);
+
     return (
-      data.allFeaturedpostsJson.edges.map(item => {
+      posts.map(item => {
         return (
-          <PostBlock post={item.node}/>
+          <PostBlock post={item.node} version={version} />
         )
       })
     );
@@ -19,10 +27,24 @@ const Posts = ({version}) => {
     <StaticQuery
       query={graphql`
         query postsQuery {
-          allFeaturedpostsJson {
+          allFeaturedJson {
             edges {
               node {
+                id,
                 title,
+                image {
+                  name,
+                  src
+                }
+              }
+            }
+          },
+          allPostsJson {
+            edges {
+              node {
+                id,
+                title,
+                shortDesc,
                 image {
                   name,
                   src

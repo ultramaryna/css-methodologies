@@ -10,16 +10,9 @@
     @include wrapper();
 }
 
-.section--featured-posts {
+.section--featured-posts, .section--posts, .section--premieres {
     background-color: $grey;
-}
-
-.section--posts {
-    background-color: $grey;
-}
-
-.section--premieres {
-    background-color: $grey;
+    color: $white;
 }
 
 .section--banner {
