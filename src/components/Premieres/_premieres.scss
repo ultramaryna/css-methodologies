@@ -1,0 +1,126 @@
+.premieres {
+    color: $white;
+    &:hover {
+        .premieres__heading {
+            opacity: 0;
+            display: none;
+        }
+    }
+}
+
+.premieres__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    z-index: 1;
+    @media (min-width: $bp-main) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.premieres__heading {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 128px;
+    line-height: 118px;
+    text-align: center;
+    width: 128px;
+    word-break: break-all;
+    opacity: 1;
+    background-image: linear-gradient(to right, $gradient-black);
+    transition: $transition;
+    z-index: 2;
+    @include gradient-text();
+    @media (min-width: $bp-main) {
+        width: 100%;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        word-break: normal;
+        letter-spacing: 4px;
+        line-height: 1;
+        background-image: linear-gradient(to bottom, $gradient-black);
+    }
+    @media (min-width: $screen-lg) {
+        font-size: 210px;
+    }
+}
+
+.premieres__item {
+    position: relative;
+    margin-bottom: 20px;
+    align-self: center;
+    text-align: center;
+    &:hover {
+        .premieres__title {
+            opacity: 1;
+        }
+    }
+    @media (min-width: $bp-main) {
+        width: calc((100% - 80px) / 5);
+    }
+    @media (min-width: $screen-lg) {
+        width: calc((100% - 240px) / 5);
+    }
+}
+
+.premieres__picture {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    overflow: hidden;
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: $gradient-multicolor;
+        opacity: 0;
+        transition: $transition;
+    }
+    &:hover {
+        &:after {
+            opacity: .7;
+        }
+        .premieres__img {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.premieres__img {
+    max-width: 100%;
+    transition: $transition;
+}
+
+.premieres__title {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-family: $font-headings;
+    color: $white;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: $transition;
+    &:hover {
+        & + .premieres__picture {
+            &:after {
+                opacity: .7;
+            }
+        }
+    }
+    @media (min-width: $bp-main) {
+        left: auto;
+        right: 0;
+        writing-mode: vertical-lr;
+    }
+}

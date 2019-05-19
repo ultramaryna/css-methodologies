@@ -17,25 +17,25 @@
 }
 
 .btn--primary {
-    border-image: linear-gradient(45deg, #2E3134, #CE54DC);
+    border-image: $gradient-violet;
     border-image-slice: 1;
     &:hover {
-        background-image: linear-gradient(45deg, #2E3134, #CE54DC);
+        background-image: $gradient-violet;
     }
 }
 
 .btn--secondary {
-    border-image: linear-gradient(45deg, #2E3134, #42DCC3);
+    border-image: $gradient-teal;
     border-image-slice: 1;
     &:hover {
-        background-image: linear-gradient(45deg, #2E3134, #42DCC3);
+        background-image: $gradient-teal;
     }
 }
 
 .btn--alter {
-    border-image: linear-gradient(45deg, #6FF7E0 0%, #FC69EE 50%, #8519A3 100%);
+    border-image: $gradient-multicolor;
     border-image-slice: 1;
     &:hover {
-        background-image: linear-gradient(45deg, #6FF7E0 0%, #FC69EE 50%, #8519A3 100%);
+        background-image: $gradient-multicolor;
     }
 }

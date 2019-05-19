@@ -9,3 +9,9 @@
         padding: 0 $margin-desktop;
     }
 }
+
+@mixin gradient-text() {
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

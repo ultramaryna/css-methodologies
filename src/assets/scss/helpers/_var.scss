@@ -20,7 +20,7 @@ $blue-lighter: #6F8FBB;
 // responsive
 $screen-sm: 480px;
 $screen-md: 768px;
-$screen-lg: 1000px;
+$screen-lg: 1200px;
 
 $bp-main: $screen-md;
 $content__width: 1200px;
@@ -38,3 +38,12 @@ $text-color: $grey;
 // margins
 $margin-mobile: 20px;
 $margin-desktop: 120px;
+
+// gradients
+$gradient-violet: linear-gradient(45deg, #2E3134, #CE54DC);
+$gradient-teal: linear-gradient(45deg, #2E3134, #42DCC3);
+$gradient-multicolor: linear-gradient(45deg, #6FF7E0 0%, #FC69EE 50%, #8519A3 100%);
+$gradient-black: rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 30%, rgba(0,0,0,0.99) 100%;
+
+// transitions
+$transition: .2s ease-in-out;

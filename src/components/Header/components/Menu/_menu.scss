@@ -55,4 +55,9 @@
     letter-spacing: 4px;
     line-height: 22px;
     text-align: center;
+
+    &:hover {
+        background-image: $gradient-multicolor;
+        @include gradient-text();
+    }
 }

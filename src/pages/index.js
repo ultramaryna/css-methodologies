@@ -7,6 +7,7 @@ import SEO from "../components/Seo/seo"
 import Section from "../components/Section/Section"
 import Hero from "../components/Hero/hero"
 import Posts from "../components/Posts/posts"
+import Premieres from "../components/Premieres/premieres";
 
 const IndexPage = ({ location }) => {
 
@@ -25,6 +26,9 @@ const IndexPage = ({ location }) => {
       <Hero/>
       <Section sectionName="featured-posts">
         <Posts version="vertical"/>
+      </Section>
+      <Section sectionName="premieres">
+        <Premieres />
       </Section>
       <Section sectionName="posts">
         <Posts version="horizontal"/>
