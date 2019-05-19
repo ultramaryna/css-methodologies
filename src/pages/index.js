@@ -9,6 +9,7 @@ import Hero from "../components/Hero/hero"
 import Posts from "../components/Posts/posts"
 import Premieres from "../components/Premieres/premieres";
 import PageDescription from '../components/PageDescription/pageDescription';
+import SlickSlider from '../components/Slider/slider';
 
 const IndexPage = ({ location }) => {
 
@@ -21,6 +22,9 @@ const IndexPage = ({ location }) => {
       </Section>
       <Section sectionName="premieres">
         <Premieres />
+      </Section>
+      <Section sectionName="artists">
+        <SlickSlider/>
       </Section>
       <Section sectionName="posts">
         <Posts version="horizontal" />
