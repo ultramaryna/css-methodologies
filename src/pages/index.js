@@ -7,9 +7,8 @@ import SEO from "../components/Seo/seo"
 import Section from "../components/Section/Section"
 import Hero from "../components/Hero/hero"
 import Posts from "../components/Posts/posts"
-import Premieres from "../components/Premieres/premieres";
-import PageDescription from '../components/PageDescription/pageDescription';
-import SlickSlider from '../components/Slider/slider';
+import Premieres from "../components/Premieres/premieres"
+import PageDescription from '../components/PageDescription/pageDescription'
 
 const IndexPage = ({ location }) => {
 
@@ -24,7 +23,7 @@ const IndexPage = ({ location }) => {
         <Premieres />
       </Section>
       <Section sectionName="artists">
-        <SlickSlider/>
+        <Artists />
       </Section>
       <Section sectionName="posts">
         <Posts version="horizontal" />
