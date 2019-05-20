@@ -1,7 +1,7 @@
 import React from "react"
 import Slider from "react-slick";
 
-const SlickSlider = () => {
+const SlickSlider = ({children}) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -12,8 +12,7 @@ const SlickSlider = () => {
 
   return (
     <Slider {...settings}>
-      <div>Aha</div>
-      <div>HAHA</div>
+      {children}
     </Slider>
   )
 }
