@@ -18,10 +18,37 @@ body {
     letter-spacing: 5.5px;
     margin-bottom: 30px;
     z-index: 1;
+    @media (min-width: $screen-sm) {
+        font-size: 38px;
+    }
 }
 
 .heading__content {
-    @include underline($grey-lighter, 15px);
+    @include underline($grey-lighter, 15px, 15px);
+}
+
+.heading--violet {
+    .heading__content {
+        @include underline($purple-lighter, 15px, 24px);
+    }
+}
+
+.heading--turquoise {
+    .heading__content {
+        @include underline($turqoise-lighter, 15px, 24px);
+    }
+}
+
+.heading--teal {
+    .heading__content {
+        @include underline($teal-lighter, 15px, 24px);
+    }
+}
+
+.heading--blue {
+    .heading__content {
+        @include underline($blue-lighter, 15px, 24px);
+    }
 }
 
 .heading--main {
@@ -46,7 +73,7 @@ body {
     color: $text-color;
     position: relative;
     text-decoration: none;
-    @include underline($teal-lighter, 10px);
+    @include underline($teal-lighter, 10px, 10px);
     &:hover, &:visited {
         color: $text-color;
     }

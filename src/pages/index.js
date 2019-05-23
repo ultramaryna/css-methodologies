@@ -9,6 +9,7 @@ import Hero from "../components/Hero/hero"
 import Posts from "../components/Posts/posts"
 import Premieres from "../components/Premieres/premieres"
 import PageDescription from '../components/PageDescription/pageDescription'
+import Artists from '../components/Artists/artists'
 
 const IndexPage = ({ location }) => {
 

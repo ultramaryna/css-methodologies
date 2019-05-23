@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { StaticQuery, graphql } from "gatsby"
 
-import SlickSlider from './Slider/SlickSlider'
+import SlickSlider from '../SlickSlider/slickSlider'
 
 const Artists = () => {
 
@@ -10,19 +10,25 @@ const Artists = () => {
         const { allArtistsJson: { edges: artists } } = data;
 
         return (
-            artists.map((artist) => {
-                const { node: artist } = artist;
+            artists.map((item) => {
+                const { node: artist } = item;
                 return (
                     <div className="artists__item">
-                        <img src={artist.image.src} alt={artist.image.title} className="artists__img"/>
-                        <h3 className="artists__title heading">{artist.name}</h3>
-                        <p class="artists__bio">{artis.shortBio}</p>
-                        <Link to={artist.link} title={artist.name} className="artists__link btn btn--alter">
-                            Czytaj
-                        </Link>
-                    </li>
+                        <div className="artists__img-wrapper">
+                          <img src={artist.image.src} alt={artist.image.title} className="artists__img"/>
+                        </div>
+                        <div className="artists__content">
+                          <h3 className="artists__title heading heading--violet">
+                            <span className="heading__content">{artist.name}</span>
+                          </h3>
+                          <p class="artists__bio">{artist.shortBio}</p>
+                          <Link to={artist.link} title={artist.name} className="artists__link btn btn--alter">
+                              Czytaj
+                          </Link>
+                        </div>
+                    </div>
                 )
-            });
+            })
         )
     }
 
@@ -36,7 +42,7 @@ const Artists = () => {
                     name,
                     link,
                     shortBio
-                    images {
+                    image {
                       title,
                       src
                     }
@@ -46,9 +52,11 @@ const Artists = () => {
             }
         `}
         render={data => (
-            <SlickSlider className="artists">
+          <div className="artists">
+            <SlickSlider>
                 {renderArtists(data)}
-            </ul>
+            </SlickSlider>
+          </div>
         )}
      />
   )

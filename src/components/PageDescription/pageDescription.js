@@ -14,7 +14,9 @@ const PageDescription = () => {
       `}
       render={data => (
         <>
-          <h2 className="heading">{data.descriptionJson.title}</h2>
+          <h2 className="heading heading--turquoise">
+            <span className="heading__content">{data.descriptionJson.title}</span>
+          </h2>
           <p>{data.descriptionJson.text}</p>
         </>
       )}
