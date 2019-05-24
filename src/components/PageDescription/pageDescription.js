@@ -13,12 +13,12 @@ const PageDescription = () => {
         }
       `}
       render={data => (
-        <>
+        <div className="page-description">
           <h2 className="heading heading--turquoise">
             <span className="heading__content">{data.descriptionJson.title}</span>
           </h2>
-          <p>{data.descriptionJson.text}</p>
-        </>
+          <p dangerouslySetInnerHTML={{ __html: data.descriptionJson.text }} />
+        </div>
       )}
     />
   )

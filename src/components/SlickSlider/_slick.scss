@@ -13,11 +13,23 @@
 .slick-prev {
     transform: rotate(90deg);
     left: 0;
+    @media (min-width: $screen-sm) {
+        left: -40px;
+    }
+    @media (min-width: $screen-md) {
+        left: -90px;
+    }
 }
 
 .slick-next {
     transform: rotate(-90deg);
     right: 0;
+    @media (min-width: $screen-sm) {
+        right: -40px;
+    }
+    @media (min-width: $screen-md) {
+        right: -90px;
+    }
 }
 
 .slick-dots {

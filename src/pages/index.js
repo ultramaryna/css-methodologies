@@ -1,6 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
-import { StaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/Layout/layout"
 import SEO from "../components/Seo/seo"
@@ -10,6 +8,8 @@ import Posts from "../components/Posts/posts"
 import Premieres from "../components/Premieres/premieres"
 import PageDescription from '../components/PageDescription/pageDescription'
 import Artists from '../components/Artists/artists'
+import Newsletter from '../components/Newsletter/newsletter'
+import Authors from '../components/Authors/authors'
 
 const IndexPage = ({ location }) => {
 
@@ -34,6 +34,12 @@ const IndexPage = ({ location }) => {
       </Section>
       <Section sectionName="description">
         <PageDescription />
+      </Section>
+      <Section sectionName="newsletter">
+        <Newsletter />
+      </Section>
+      <Section sectionName="authors">
+        <Authors />
       </Section>
     </Layout>
   );

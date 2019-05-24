@@ -10,7 +10,7 @@
     @include wrapper();
 }
 
-.section--featured-posts, .section--posts, .section--premieres {
+.section--featured-posts, .section--posts, .section--premieres, .section--authors {
     background-color: $grey;
     color: $white;
 }
@@ -43,4 +43,14 @@
 
 .section--description {
     background-color: $turqoise;
+    color: $white;
+    font-size: 24px;
+}
+
+.section--newsletter {
+    background-color: $yellow;
+    padding: 14px 0 30px;
+    @media (min-width: $bp-main) {
+        padding: 26px 0 70px;
+    }
 }

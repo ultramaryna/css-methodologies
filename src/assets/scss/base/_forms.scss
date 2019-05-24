@@ -1,0 +1,41 @@
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input {
+    padding: 14px 20px;
+    margin-bottom: 15px;
+    border: 3px solid $white;
+    background-color: transparent;
+    font-family: $font-text;
+    font-weight: 900;
+    font-size: 16px;
+    @media (min-width: $screen-sm) {
+        padding: 15px 26px;
+    }
+}
+
+.form__label {
+    @include visuallyHidden();
+}
+
+.form__button {
+    border: 0;
+    padding: 15px 47px;
+    align-self: flex-start;
+    font-size: 14px;
+}
+
+.form--brown {
+    .form__input {
+        border-color: $brown;
+        color: $brown;
+        &::placeholder {
+            color: $brown;
+        }
+    }
+    .form__button {
+        background-color: $brown;
+    }
+}
