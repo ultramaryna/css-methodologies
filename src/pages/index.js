@@ -11,6 +11,7 @@ import Artists from '../components/Artists/artists'
 import Newsletter from '../components/Newsletter/newsletter'
 import Authors from '../components/Authors/authors'
 import Contact from '../components/Contact/contact'
+import Repertoire from '../components/Repertoire/repertoire';
 
 const IndexPage = ({ location }) => {
 
@@ -20,6 +21,9 @@ const IndexPage = ({ location }) => {
       <Hero/>
       <Section sectionName="featured-posts">
         <Posts version="vertical" isFeatured />
+      </Section>
+      <Section sectionName="repertoire">
+        <Repertoire />
       </Section>
       <Section sectionName="premieres">
         <Premieres />

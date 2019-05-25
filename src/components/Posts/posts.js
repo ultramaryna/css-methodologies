@@ -1,7 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 
-import PostBlock from '../PostBlock/postblock'
+import PostBlock from './components/PostBlock/postblock'
 
 const Posts = ({version, isFeatured}) => {
 

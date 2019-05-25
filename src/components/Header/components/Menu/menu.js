@@ -9,9 +9,9 @@ const Menu = ({ isOpen }) => {
       data.allMenuJson.edges.map(item => {
         return (
           <li className="menu__item" key={item.node.title}>
-            <Link to={item.node.link} title={item.node.title} className="menu__link">
+            <a href={item.node.link} title={item.node.title} className="menu__link">
               {item.node.title}
-            </Link>
+            </a>
           </li>
         )
       })

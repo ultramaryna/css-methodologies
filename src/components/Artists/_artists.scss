@@ -1,15 +1,15 @@
 .artists {
-    @media (min-width: $screen-sm) {
+    @media (min-width: $bp-main) {
         padding: 0 30px;
     }
-    @media (min-width: $screen-md) {
+    @media (min-width: $bp-main) {
         padding: 0 80px;
     }
 }
 
 .artists__item {
     text-align: center;
-    @media (min-width: $screen-sm) {
+    @media (min-width: $bp-main) {
         display: flex !important;
         align-items: center;
         text-align: left;
@@ -32,7 +32,7 @@
         transform: translate(-50%, -50%) rotate(58deg);
         background-color: $purple-lighter;
         z-index: -1;
-        @media (min-width: $screen-sm) {
+        @media (min-width: $bp-main) {
             width: 289px;
             height: 289px;
         }
@@ -44,13 +44,17 @@
     margin: 0 auto;
     z-index: 1;
     align-self: center;
-    @media (min-width: $screen-sm) {
+    @media (min-width: $bp-main) {
         width: 380px;
     }
 }
 
 .artists__title {
     margin-bottom: 27px;
+    font-size: 26px;
+    @media (min-width: $bp-main) {
+      font-size: 38px;
+    }
 }
 
 .artists__bio {
@@ -59,7 +63,7 @@
 }
 
 .artists__content {
-    @media (min-width: $screen-sm) {
+    @media (min-width: $bp-main) {
         margin-left: 60px;
     }
 }

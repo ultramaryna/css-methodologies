@@ -23,11 +23,11 @@ const PostBlock = ({post, version}) => (
 )
 
 PostBlock.propTypes = {
-  siteTitle: PropTypes.string,
+  version: PropTypes.string,
 }
 
 PostBlock.defaultProps = {
-  siteTitle: ``,
+  version: ``,
 }
 
 export default PostBlock
