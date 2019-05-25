@@ -3,7 +3,7 @@
     flex-direction: column;
 }
 
-.form__input {
+.form__input, .form__textarea {
     padding: 14px 20px;
     margin-bottom: 15px;
     border: 3px solid $white;
@@ -28,14 +28,9 @@
 }
 
 .form--brown {
-    .form__input {
-        border-color: $brown;
-        color: $brown;
-        &::placeholder {
-            color: $brown;
-        }
-    }
-    .form__button {
-        background-color: $brown;
-    }
+    @include formColor($brown);
+}
+
+.form--blue {
+    @include formColor($blue-lighter);
 }

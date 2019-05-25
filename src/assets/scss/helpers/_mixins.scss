@@ -36,3 +36,16 @@
     padding: 0;
     border: 0;
 }
+
+@mixin formColor($color) {
+  .form__input, .form__textarea {
+      border-color: $color;
+      color: $color;
+      &::placeholder {
+          color: $color;
+      }
+  }
+  .form__button {
+      background-color: $color;
+  }
+}

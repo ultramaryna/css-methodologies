@@ -10,6 +10,7 @@ import PageDescription from '../components/PageDescription/pageDescription'
 import Artists from '../components/Artists/artists'
 import Newsletter from '../components/Newsletter/newsletter'
 import Authors from '../components/Authors/authors'
+import Contact from '../components/Contact/contact'
 
 const IndexPage = ({ location }) => {
 
@@ -40,6 +41,9 @@ const IndexPage = ({ location }) => {
       </Section>
       <Section sectionName="authors">
         <Authors />
+      </Section>
+      <Section sectionName="contact">
+        <Contact />
       </Section>
     </Layout>
   );

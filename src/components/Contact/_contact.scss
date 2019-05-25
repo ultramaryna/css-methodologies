@@ -1,0 +1,22 @@
+.contact {
+  @media (min-width: $bp-main) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contact__info {
+  max-width: 440px;
+}
+
+.contact__form {
+  @media (min-width: $bp-main) {
+    width: 480px;
+    margin-left: 40px;
+  }
+}
+
+.contact__text {
+  font-size: 18px;
+  margin-bottom: 18px;
+}

@@ -44,7 +44,7 @@
 .section--description {
     background-color: $turqoise;
     color: $white;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .section--newsletter {
@@ -53,4 +53,9 @@
     @media (min-width: $bp-main) {
         padding: 26px 0 70px;
     }
+}
+
+.section--contact {
+  background-color: $blue;
+  color: $white;
 }
