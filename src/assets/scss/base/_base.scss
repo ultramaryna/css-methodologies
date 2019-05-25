@@ -8,18 +8,17 @@ body {
 }
 
 .heading {
-    display: inline-block;
     position: relative;
     font-family: $font-headings;
     font-weight: 900;
     line-height: $line-height;
-    font-size: 26px;
+    font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 5.5px;
     margin-bottom: 30px;
     z-index: 1;
     @media (min-width: $screen-sm) {
-        font-size: 38px;
+        font-size: 32px;
     }
 }
 

@@ -5,9 +5,19 @@ import SlickSlider from '../SlickSlider/slickSlider'
 const Authors = () => {
   const slickSettings = {
     infinite: true,
+    dots: false,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
 
   function renderAuthors(data) {
@@ -19,7 +29,7 @@ const Authors = () => {
         return (
           <div className="authors__item">
             <img src={author.image} alt={author.name} className="authors__image"/>
-            <h3>{author.name}</h3>
+            <h3 className="authors__name">{author.name}</h3>
           </div>
         )
       })
@@ -44,8 +54,8 @@ const Authors = () => {
         }
       `}
       render={data => (
-        <div className="authors">
-          <h2 className="heading">
+        <div className="authors slick--authors">
+          <h2 className="heading authors__title">
             <span className="heading__content">Twórcy</span>
           </h2>
           <SlickSlider customSettings={slickSettings}>

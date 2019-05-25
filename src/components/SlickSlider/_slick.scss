@@ -2,19 +2,26 @@
     width: 46px;
     height: 46px;
     top: 133px;
+    @media (min-width: $bp-main) {
+      top: 37%;
+    }
     &:before {
         content: '\E800';
         font-family: 'fontello';
         font-size: 28px;
         opacity: 1;
+        @media (min-width: $bp-main) {
+          font-size: 46px;
+        }
     }
 }
 
 .slick-prev {
     transform: rotate(90deg);
     left: 0;
-    @media (min-width: $screen-sm) {
+    @media (min-width: $bp-main) {
         left: -40px;
+        transform: rotate(90deg) translateY(-50%);
     }
     @media (min-width: $screen-md) {
         left: -90px;
@@ -24,8 +31,9 @@
 .slick-next {
     transform: rotate(-90deg);
     right: 0;
-    @media (min-width: $screen-sm) {
+    @media (min-width: $bp-main) {
         right: -40px;
+        transform: rotate(-90deg) translateY(-50%);
     }
     @media (min-width: $screen-md) {
         right: -90px;
@@ -38,16 +46,16 @@
     margin-top: 44.5px;
     li {
         margin: 0 5px;
-        @media (min-width: $screen-sm) {
-            margin: 0 6px;
+        @media (min-width: $bp-main) {
+            margin: 0 12px;
         }
         button {
             margin: 0;
             width: 17px;
             height: 17px;
             border: 3px solid $purple-lighter;
-            border-radius: 100%;
-            @media (min-width: $screen-sm) {
+            transform: rotate(45deg);
+            @media (min-width: $bp-main) {
                 width: 20px;
                 height: 20px;
             }
@@ -62,4 +70,31 @@
             background-color: $purple-lighter;
         }
     }
+}
+
+.slick--authors {
+  .slick-next, .slick-prev {
+    top: 37%;
+    &:before {
+      @media (min-width: $bp-main) {
+        font-size: 34px;
+      }
+    }
+  }
+
+  .slick-next {
+    right: -65px;
+    transform: rotate(-90deg) translateY(-50%);
+    @media (min-width: $bp-main) {
+      right: -70px;
+    }
+  }
+
+  .slick-prev {
+    left: -65px;
+    transform: rotate(90deg) translateY(-50%);
+    @media (min-width: $bp-main) {
+      left: -70px;
+    }
+  }
 }
