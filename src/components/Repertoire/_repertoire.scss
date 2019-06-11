@@ -1,0 +1,35 @@
+.repertoire__select {
+  background-color: $lighter-grey;
+  list-style-type: none;
+  padding: 20px;
+  max-height: 140px;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 22px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $grey;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $teal-lighter;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: $grey;
+  }
+}
+
+.repertoire__select-item {
+  font-family: $font-headings;
+  font-size: 18px;
+  letter-spacing: 4.5px;
+  margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}

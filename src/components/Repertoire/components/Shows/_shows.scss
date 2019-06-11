@@ -1,0 +1,15 @@
+.shows {
+  margin-top: 50px;
+}
+
+.shows__theatres {
+  list-style-type: none;
+}
+
+.shows__theatre-name {
+  font-size: 18px;
+  font-family: $font-headings;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 4.5px;
+}

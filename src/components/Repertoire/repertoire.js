@@ -2,44 +2,69 @@ import { Link } from "gatsby"
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 
-const Repertoire = () => {
+import Shows from './components/Shows/shows';
 
-  function renderShowNames(data) {
+class Repertoire extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeShow: false
+    }
+  }
+
+  displayShows(show) {
+    this.setState({ activeShow: show.name });
+  }
+
+  renderShowNames(data) {
     const { allRepertoireJson: { edges: shows } } = data;
 
     return (
         shows.map((item) => {
             const { node: show } = item;
             return (
-              <li>{show.name}</li>
+              <li
+                className="repertoire__select-item"
+                onClick={() => this.displayShows(show)}
+              >
+                {show.name}
+              </li>
             );
         })
     )
   }
 
-  return (
-    <StaticQuery
-      query={graphql`
-        query repertoireQuery {
-          allRepertoireJson {
-            edges {
-              node {
-                name
+  render() {
+    return (
+      <StaticQuery
+        query={graphql`
+          query repertoireQuery {
+            allRepertoireJson {
+              edges {
+                node {
+                  name
+                  theatres {
+                    name
+                  }
+                }
               }
             }
           }
-        }
-      `}
-      render={data => (
-        <div className="repertoire">
-          <h2 class="heading--main repertoire__heading">Repertuar</h2>
-          <ul className="repertoire__shows-select">
-            {renderShowNames(data)}
-          </ul>
-        </div>
-      )}
-    />
-  )
+        `}
+        render={data => (
+          <div className="repertoire">
+            <h2 class="heading--main repertoire__heading">Repertuar</h2>
+            <ul className="repertoire__select">
+              {this.renderShowNames(data)}
+            </ul>
+            {this.state.activeShow &&
+              <Shows showName={this.state.activeShow} data={data} />
+            }
+          </div>
+        )}
+      />
+    )
+  }
 }
 
 export default Repertoire
