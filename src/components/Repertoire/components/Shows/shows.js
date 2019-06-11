@@ -1,5 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
+import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemPanel, AccordionItemButton } from 'react-accessible-accordion';
 
 const Shows = ({showName, data}) => {
 
@@ -17,13 +18,21 @@ const Shows = ({showName, data}) => {
       <h3 className="heading heading--teal shows__title">
         <span className="heading__content">{show.name}</span>
       </h3>
-      <ul className="shows__theatres">
+      <Accordion className="shows__theatres">
         {show.theatres.map(theatre => (
-          <li key={theatre.name}>
-            <h4 className="shows__theatre-name">{theatre.name}</h4>
-          </li>
+          <AccordionItem key={theatre.name}>
+            <AccordionItemHeading className="shows__theatre-name">
+              {theatre.name}
+              <AccordionItemButton>
+                Bu
+              </AccordionItemButton>
+            </AccordionItemHeading>
+            <AccordionItemPanel>
+              hahahaha
+            </AccordionItemPanel>
+          </AccordionItem>
         ))}
-      </ul>
+      </Accordion>
     </div>
   );
 }
