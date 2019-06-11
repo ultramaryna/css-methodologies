@@ -1,5 +1,15 @@
 .shows {
   margin-top: 50px;
+  @media (min-width: $bp-main) {
+    margin: 10px 20px 0 0;
+    width: calc(60% - 20px);
+  }
+}
+
+.shows__title {
+  @media (min-width: $bp-main) {
+    margin-bottom: 20px;
+  }
 }
 
 .shows__theatres {
@@ -12,4 +22,20 @@
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 4.5px;
+  margin-bottom: 22px;
+  @media (min-width: $screen-lg) {
+    font-size: 22px;
+  }
+}
+
+.shows__theatre-expand {
+  position: relative;
+  padding-right: 30px;
+  &:after {
+    content: '\E800';
+    font-family: 'fontello';
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 }

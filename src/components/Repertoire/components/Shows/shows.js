@@ -22,9 +22,8 @@ const Shows = ({showName, data}) => {
         {show.theatres.map(theatre => (
           <AccordionItem key={theatre.name}>
             <AccordionItemHeading className="shows__theatre-name">
-              {theatre.name}
-              <AccordionItemButton>
-                Bu
+              <AccordionItemButton className="shows__theatre-expand">
+                {theatre.name}
               </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
