@@ -32,7 +32,8 @@ const Repertoire = () => {
       `}
       render={data => (
         <div className="repertoire">
-          <ul className="shows">
+          <h2 class="heading--main repertoire__heading">Repertuar</h2>
+          <ul className="repertoire__shows-select">
             {renderShowNames(data)}
           </ul>
         </div>
