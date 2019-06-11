@@ -46,5 +46,101 @@
         }
       }
     ]
+  }, {
+    "name": "Metro",
+    "theatres": [
+      {
+        "name": "Teatr Buffo w Warszawie",
+        "months": {
+          "październik": [
+            {
+              "day": "1",
+              "hour": "15:00"
+            }, {
+              "day": "1",
+              "hour": "19:00"
+            }, {
+              "day": "2",
+              "hour": "19:00"
+            }
+          ]
+        }
+      }
+    ]
+  }, {
+    "name": "Chicago",
+    "theatres": [
+      {
+        "name": "Teatr Variete w Krakowie",
+        "months": {
+          "październik": [
+            {
+              "day": "1",
+              "hour": "15:00"
+            }, {
+              "day": "1",
+              "hour": "19:00"
+            }, {
+              "day": "2",
+              "hour": "19:00"
+            }
+          ],
+          "listopad": [
+            {
+              "day": "1",
+              "hour": "15:00"
+            }, {
+              "day": "1",
+              "hour": "19:00"
+            }, {
+              "day": "2",
+              "hour": "19:00"
+            }
+          ]
+        }
+      }
+    ]
+  }, {
+    "name": "Miss Saigon",
+    "theatres": [
+      {
+        "name": "Teatr Muzyczny w Łodzi",
+        "months": {
+          "październik": [
+            {
+              "day": "1",
+              "hour": "15:00"
+            }, {
+              "day": "1",
+              "hour": "19:00"
+            }, {
+              "day": "2",
+              "hour": "19:00"
+            }
+          ]
+        }
+      }
+    ]
+  }, {
+    "name": "Once",
+    "theatres": [
+      {
+        "name": "Teatr Muzyczny ROMA w Warszawie",
+        "months": {
+          "październik": [
+            {
+              "day": "1",
+              "hour": "15:00"
+            }, {
+              "day": "1",
+              "hour": "19:00"
+            }, {
+              "day": "2",
+              "hour": "19:00"
+            }
+          ]
+        }
+      }
+    ]
   }
 ]
