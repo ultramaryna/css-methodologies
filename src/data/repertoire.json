@@ -23,6 +23,27 @@
             ]
           }
         ]
+      }, {
+        "name": "Teatr Muzyczny w Szczecinie",
+        "months": [
+          {
+            "październik": [
+              {
+                "day": "12",
+                "hour": "18:00"
+              }, {
+                "day": "13",
+                "hour": "18:00"
+              }, {
+                "day": "19",
+                "hour": "18:00"
+              }, {
+                "day": "20",
+                "hour": "21:00"
+              }
+            ]
+          }
+        ]
       }
     ]
   }, {
@@ -98,6 +119,27 @@
             }
           ]
         }
+      }, {
+        "name": "Teatr Muzyczny w Chożowie",
+        "months": [
+          {
+            "październik": [
+              {
+                "day": "12",
+                "hour": "18:00"
+              }, {
+                "day": "13",
+                "hour": "18:00"
+              }, {
+                "day": "19",
+                "hour": "18:00"
+              }, {
+                "day": "20",
+                "hour": "21:00"
+              }
+            ]
+          }
+        ]
       }
     ]
   }, {
