@@ -53,6 +53,7 @@
   font-size: 18px;
   letter-spacing: 4.5px;
   margin-bottom: 20px;
+  cursor: pointer;
   @media (min-width: $bp-main) {
     font-size: 22px;
     margin-bottom: 10px;
@@ -60,5 +61,13 @@
 
   &:last-of-type {
     margin-bottom: 0;
+  }
+}
+
+.repertoire__shows-wrapper {
+  margin-top: 50px;
+  @media (min-width: $bp-main) {
+    margin: 10px 20px 0 0;
+    width: calc(60% - 20px);
   }
 }

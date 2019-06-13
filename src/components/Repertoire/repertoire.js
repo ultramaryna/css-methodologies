@@ -57,9 +57,11 @@ class Repertoire extends React.Component {
             <ul className="repertoire__select">
               {this.renderShowNames(data)}
             </ul>
-            {this.state.activeShow &&
-              <Shows showName={this.state.activeShow} data={data} />
-            }
+            <div className="repertoire__shows-wrapper">
+              {this.state.activeShow &&
+                <Shows showName={this.state.activeShow} data={data} />
+              }
+            </div>
           </div>
         )}
       />
