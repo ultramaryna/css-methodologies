@@ -19,7 +19,7 @@
 @mixin underline($color, $height, $desktopHeight) {
     background-image: linear-gradient(to right, $color, $color);
     background-repeat: repeat-x;
-    background-position: 0 100%;
+    background-position: 0 125%;
     background-size: 100% $height;
     @media (min-width: $screen-sm) {
         background-size: 100% $desktopHeight;

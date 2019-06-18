@@ -23,6 +23,7 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "react-slick": "^0.24.0",
+    "rehype-react": "^3.1.0",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
