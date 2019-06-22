@@ -1,9 +1,9 @@
 ---
-title: 'Miss Saigon'
-date: 2017-10-20T21:09:00.000+02:00
+title: 'Lorem ipsum dolor'
+date: 2018-10-20T21:09:00.000+02:00
 type: article
-authorId: 1
-mainImage: images/posts/sadness.jpg
+author: Jon Snow
+mainImage: images/posts/ghost.jpg
 featured: true
 ---
 

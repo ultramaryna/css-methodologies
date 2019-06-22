@@ -1,10 +1,10 @@
 ---
-title: 'Miss Saigon'
-date: 2017-10-20T21:09:00.000+02:00
+title: 'Deszczowa piosenka'
+date: 2019-01-20T21:09:00.000+02:00
 type: article
-authorId: 1
-mainImage: images/posts/sadness.jpg
-featured: true
+author: Maria Nowak
+mainImage: images/posts/city.jpg
+featured: false
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  Duis aute irure dolor in [reprehenderit in voluptate](/articles/wiedzmin) velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
