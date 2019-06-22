@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import Menu from './components/Menu/menu';
 import logo from '../../assets/images/logo.svg';
@@ -19,7 +20,9 @@ class Header extends React.Component {
     const { isMenuOpen } = this.state;
     return (
       <header className={isMenuOpen ? 'header header--menu-active' : 'header'}>
-        <img src={logo} alt="Musicale - logo" className="header__logo"/>
+        <Link to="/">
+          <img src={logo} alt="Musicale - logo" className="header__logo"/>
+        </Link>
         <Menu isOpen={isMenuOpen}/>
         <button type="button" className="header__toggle-mobile" onClick={this.toggleMenu.bind(this)}>
           <i className="icon-bars" />

@@ -1,15 +1,15 @@
 [
   {
     "title": "Repertuar",
-    "link": "#repertoire"
+    "link": "/#repertoire"
   }, {
     "title": "Premiery",
-    "link": "#premieres"
+    "link": "/#premieres"
   }, {
     "title": "Artykuły",
-    "link": "#featured-posts"
+    "link": "/#featured-posts"
   }, {
     "title": "Twórcy",
-    "link": "#artists"
+    "link": "/#artists"
   }
 ]

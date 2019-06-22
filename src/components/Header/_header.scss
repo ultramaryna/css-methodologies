@@ -10,7 +10,8 @@
     z-index: 20;
     overflow: visible;
     @media (min-width: $bp-main) {
-        height: 61px;
+        height: 60px;
+        padding: 0;
     }
 }
 
@@ -24,6 +25,7 @@
     transition: .25s ease-in-out 0s;
     @media (min-width: $bp-main) {
         left: 50%;
+        height: 125px;
         transform: translateX(-50%);
     }
 }

@@ -26,6 +26,7 @@ class Repertoire extends React.Component {
               <li
                 className="repertoire__select-item"
                 onClick={() => this.displayShows(show)}
+                key={show.name}
               >
                 {show.name}
               </li>
@@ -53,7 +54,7 @@ class Repertoire extends React.Component {
         `}
         render={data => (
           <div className="repertoire">
-            <h2 class="heading--main repertoire__heading">Repertuar</h2>
+            <h2 className="heading--main repertoire__heading">Repertuar</h2>
             <ul className="repertoire__select">
               {this.renderShowNames(data)}
             </ul>

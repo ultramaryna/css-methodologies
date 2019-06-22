@@ -10,6 +10,7 @@ const Posts = ({version, isFeatured}) => {
 
     if (isFeatured) {
       posts = data.allFeaturedJson.edges;
+      console.log(posts);
     }
 
     return (

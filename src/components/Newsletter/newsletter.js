@@ -5,7 +5,7 @@ const Newsletter = () => (
     <div className="newsletter">
       <h3 className="newsletter__title heading heading--main">Newsletter</h3>
       <form className="form form--brown newsletter__form">
-        <label for="email" className="form__label">
+        <label htmlFor="email" className="form__label">
           Adres e-mail
         </label>
         <input

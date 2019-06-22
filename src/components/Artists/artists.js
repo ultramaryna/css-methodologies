@@ -20,7 +20,7 @@ const Artists = () => {
                           <h3 className="artists__title heading heading--violet">
                             <span className="heading__content">{artist.name}</span>
                           </h3>
-                          <p class="artists__bio">{artist.shortBio}</p>
+                          <p className="artists__bio">{artist.shortBio}</p>
                           <Link to={artist.link} title={artist.name} className="artists__link btn btn--alter">
                               Czytaj
                           </Link>
