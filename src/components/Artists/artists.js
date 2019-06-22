@@ -8,20 +8,19 @@ import DecoratedImage from '../DecoratedImage/decoratedImage';
 const Artists = () => {
 
     function renderArtists(data) {
-        const { allArtistsJson: { edges: artists } } = data;
+        const { allMarkdownRemark: { nodes: artists } } = data;
 
         return (
-            artists.map((item) => {
-                const { node: artist } = item;
+            artists.map((artist) => {
                 return (
                     <div className="artists__item">
-                        <DecoratedImage src={artist.image.src} alt={artist.image.title} />
+                        <DecoratedImage src={artist.frontmatter.mainImage} alt={artist.frontmatter.title} />
                         <div className="artists__content">
                           <h3 className="artists__title heading heading--violet">
-                            <span className="heading__content">{artist.name}</span>
+                            <span className="heading__content">{artist.frontmatter.title}</span>
                           </h3>
-                          <p className="artists__bio">{artist.shortBio}</p>
-                          <Link to={artist.link} title={artist.name} className="artists__link btn btn--alter">
+                          <p className="artists__bio">{artist.excerpt}</p>
+                          <Link to={artist.fields.slug} title={artist.frontmatter.title} className="artists__link btn btn--alter">
                               Czytaj
                           </Link>
                         </div>
@@ -35,19 +34,18 @@ const Artists = () => {
       <StaticQuery
         query={graphql`
             query artistsQuery {
-              allArtistsJson {
-                edges {
-                  node {
-                    name,
-                    link,
-                    shortBio
-                    image {
-                      title,
-                      src
-                    }
+              allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/artists/.*/"} }) {
+              	nodes {
+                  fields {
+                    slug
+                  }
+                	excerpt
+                  frontmatter {
+                    title,
+                    mainImage
                   }
                 }
-              }
+            	}
             }
         `}
         render={data => (

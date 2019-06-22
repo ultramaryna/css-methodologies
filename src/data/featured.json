@@ -4,21 +4,21 @@
     "title": "Lorem ipsum",
     "image": {
       "name": "Dziewczyna na scenie",
-      "src": "../images/posts/sadness.jpg"
+      "src": "images/posts/sadness.jpg"
     }
   }, {
     "id": "2",
     "title": "Lorem ipsum",
     "image": {
       "name": "Siedzenia w teatrze",
-      "src": "../images/posts/theatre.jpg"
+      "src": "images/posts/theatre.jpg"
     }
   }, {
     "id": "3",
     "title": "Lorem ipsum, dolor sit amet",
     "image": {
       "name": "Samochód w mieście",
-      "src": "../images/posts/car.jpg"
+      "src": "images/posts/car.jpg"
     }
   }
 ]
