@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby";
 import rehypeReact from "rehype-react"
 import Layout from '../Layout/layout';
 import SEO from '../Seo/seo';
+import AuthorInfo from '../AuthorInfo/authorInfo';
 
 import PostLink from './components/PostLink/postLink';
 import Lead from './components/Lead/lead';
@@ -12,9 +13,10 @@ import PostImage from './components/PostImage/postImage';
 export default class BlogPost extends React.Component {
 
   render() {
-    const { data: { markdownRemark: post } } = this.props;
+    const { data: { markdownRemark: post, authorsJson: author } } = this.props;
     const { title, date, type } = post.frontmatter;
     const { location } = this.props;
+    console.log(author);
 
     const renderAst = new rehypeReact({
       createElement: React.createElement,
@@ -37,13 +39,14 @@ export default class BlogPost extends React.Component {
             {renderAst(post.htmlAst)}
           </div>
         </article>
+        <AuthorInfo author={author} type={post.type} />
       </Layout>
     )
   }
 }
 
 export const query = graphql`
-query PostQuery($slug: String!) {
+query PostQuery($slug: String!, $author: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
         htmlAst
         excerpt
@@ -52,6 +55,13 @@ query PostQuery($slug: String!) {
             date(formatString: "DD.MM.YYYY")
             type
             mainImage
+            author
         }
+    }
+    authorsJson (name: { eq: $author }) {
+      name,
+      bio,
+      image,
+      id
     }
 }`

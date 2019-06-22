@@ -12,8 +12,6 @@ const Posts = ({version, isFeatured}) => {
       posts = data.allFeaturedJson.edges;
     }
 
-    console.log(posts);
-
     return (
       posts.map(item => {
         return (

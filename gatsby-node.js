@@ -21,6 +21,7 @@ exports.createPages = ({ actions, graphql }) => {
               }
             frontmatter {
               title
+              author
             }
           }
         }
@@ -35,11 +36,13 @@ exports.createPages = ({ actions, graphql }) => {
         const blogTemplate = path.resolve('./src/components/Post/post.js');
 
         result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+          console.log(node);
           createPage({
             path: node.fields.slug,
             component: blogTemplate,
             context: {
               slug: node.fields.slug,
+              author: node.frontmatter.author
             }, // additional data can be passed via context
           })
         })

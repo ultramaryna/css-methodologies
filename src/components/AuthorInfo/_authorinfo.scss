@@ -1,0 +1,36 @@
+.author-info {
+  padding: 40px;
+  background-color: $article__accent-color;
+  color: $white;
+}
+
+.author-info__content {
+  max-width: $post__width;
+  margin: 0 auto;
+  text-align: center;
+  @media (min-width: $bp-main) {
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+}
+
+.author-info__img {
+  max-width: 240px;
+  height: auto;
+  display: block;
+  margin: 0 auto 30px;
+  @media (min-width: $bp-main) {
+    align-self: center;
+    margin: 0 60px 0 0;
+  }
+}
+
+.author-info__name {
+  font-family: $font-headings;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 3px;
+  font-weight: 900;
+  margin-bottom: 26px;
+}

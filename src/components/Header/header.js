@@ -12,7 +12,6 @@ class Header extends React.Component {
   }
 
   toggleMenu() {
-    console.log(this.state.isMenuOpen);
     this.setState({isMenuOpen: !this.state.isMenuOpen});
   }
 

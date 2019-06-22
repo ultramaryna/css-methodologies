@@ -1,8 +1,8 @@
 ---
-title: 'Miss Saigon'
+title: "Miss Saigon"
 date: 2014-10-20T21:09:00.000+02:00
 type: article
-authorId: 1
+author: "Jane Doe"
 mainImage: /images/posts/sadness.jpg
 ---
 <lead>
