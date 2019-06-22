@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { StaticQuery, graphql } from "gatsby"
 
 import SlickSlider from '../SlickSlider/slickSlider'
+import DecoratedImage from '../DecoratedImage/decoratedImage';
 
 const Artists = () => {
 
@@ -14,9 +15,7 @@ const Artists = () => {
                 const { node: artist } = item;
                 return (
                     <div className="artists__item">
-                        <div className="artists__img-wrapper">
-                          <img src={artist.image.src} alt={artist.image.title} className="artists__img"/>
-                        </div>
+                        <DecoratedImage src={artist.image.src} alt={artist.image.title} />
                         <div className="artists__content">
                           <h3 className="artists__title heading heading--violet">
                             <span className="heading__content">{artist.name}</span>

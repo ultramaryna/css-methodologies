@@ -2,27 +2,27 @@
   {
     "id": "1",
     "name": "Jane Doe",
-    "image": "../images/team/janedoe.png",
+    "image": "/images/team/janedoe.png",
     "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   }, {
     "id": "2",
     "name": "Anna Kowalska",
-    "image": "../images/team/annakowalska.png",
+    "image": "/images/team/annakowalska.png",
     "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   }, {
     "id": "3",
     "name": "Jon Snow",
-    "image": "../images/team/jonsnow.png",
+    "image": "/images/team/jonsnow.png",
     "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   }, {
     "id": "4",
     "name": "Maria Nowak",
-    "image": "../images/team/marianowak.png",
+    "image": "/images/team/marianowak.png",
     "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   }, {
     "id": "5",
     "name": "Geralt z Rivii",
-    "image": "../images/team/geraltzrivii.png",
+    "image": "/images/team/geraltzrivii.png",
     "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   }
 ]

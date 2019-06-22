@@ -14,7 +14,7 @@
 
 .post__content {
   @include wrapper();
-  max-width: $post__width; 
+  max-width: $post__width;
   padding-top: 40px;
   padding-bottom: 40px;
 
@@ -69,5 +69,40 @@
     .heading__content {
       @include underline($teal-lighter, 20px, 27px);
     }
+  }
+}
+
+.post--artist {
+  .post__banner {
+    @include wrapper();
+    padding-top: 55px;
+    padding-bottom: 49px;
+    height: auto;
+    background-color: $artist__accent-color;
+    @media (min-width: $bp-main) {
+      padding-top: 150px;
+      padding-bottom: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .post__title {
+    color: $pink-lighter;
+    top: auto;
+    @media (min-width: $bp-main) {
+      font-size: 70px;
+    }
+  }
+
+  .post__subheading {
+    .heading__content {
+      @include underline($pink, 20px, 27px);
+    }
+  }
+
+  .post__link {
+      @include underline($pink, 10px, 10px);
   }
 }
