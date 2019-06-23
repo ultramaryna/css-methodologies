@@ -20,7 +20,7 @@ class Header extends React.Component {
     const { isMenuOpen } = this.state;
     return (
       <header className={isMenuOpen ? 'header header--menu-active' : 'header'}>
-        <Link to="">
+        <Link to="/">
           <img src={logo} alt="Musicale - logo" className="header__logo"/>
         </Link>
         <Menu isOpen={isMenuOpen}/>

@@ -6,17 +6,20 @@ import PostBlock from './components/PostBlock/postblock'
 const Posts = ({version, isFeatured}) => {
 
   function getPosts(data) {
-    let { allPostsJson: { edges: posts } } = data;
+    let { allMarkdownRemark: { nodes: posts } } = data;
 
     if (isFeatured) {
-      posts = data.allFeaturedJson.edges;
-      console.log(posts);
+      posts = posts.filter(post => post.frontmatter.featured);
+    } else {
+      posts = posts.filter(post => !post.frontmatter.featured);
     }
 
+    console.log(posts);
+
     return (
-      posts.map(item => {
+      posts.map(post => {
         return (
-          <PostBlock post={item.node} version={version} />
+          <PostBlock post={post} version={version} />
         )
       })
     );
@@ -26,28 +29,16 @@ const Posts = ({version, isFeatured}) => {
     <StaticQuery
       query={graphql`
         query postsQuery {
-          allFeaturedJson {
-            edges {
-              node {
-                id,
-                title,
-                image {
-                  name,
-                  src
-                }
+          allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/articles/.*/"} }) {
+            nodes {
+              fields {
+                slug
               }
-            }
-          },
-          allPostsJson {
-            edges {
-              node {
-                id,
+              excerpt(pruneLength: 400)
+              frontmatter {
                 title,
-                shortDesc,
-                image {
-                  name,
-                  src
-                }
+                mainImage
+                featured
               }
             }
           }

@@ -3,7 +3,7 @@ title: 'Les Miserables'
 date: 2019-04-20T21:09:00.000+02:00
 type: article
 author: Geralt z Rivii
-mainImage: images/posts/sadness.jpg
+mainImage: images/posts/ghost.jpg
 featured: false
 ---
 

@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Metodyki CSS - BEM`,
+    title: `Metodyki CSS`,
     description: `Analiza efektywności i użyteczności metodyk CSS - implementacja strony w BEM`,
     author: `@ultramaryna`,
   },
+  pathPrefix: `/~14_kwiecien/metodologie/bem`,
   plugins: [
     `gatsby-plugin-react-helmet`,
     {

@@ -3,7 +3,8 @@ title: "Miss Saigon"
 date: 2014-10-20T21:09:00.000+02:00
 type: article
 author: "Jane Doe"
-mainImage: /images/posts/sadness.jpg
+mainImage: images/posts/sadness.jpg
+featured: true
 ---
 <lead>
 
