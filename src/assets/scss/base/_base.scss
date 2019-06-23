@@ -23,7 +23,7 @@ body {
 }
 
 .heading__content {
-    @include underline($grey-lighter, 15px, 15px);
+    @include underline($grey-lighter, 15px, 20px);
 }
 
 .heading--violet {
