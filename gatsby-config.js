@@ -51,6 +51,21 @@ module.exports = {
         pedantic: true,
         gfm: true,
       },
+<<<<<<< HEAD
     }
+=======
+      plugins: [
+        {
+          resolve: `gatsby-remark-images`,
+          options: {
+            maxWidth: 1000,
+          },
+        },
+      ],
+    },
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    // `gatsby-plugin-offline`,
+>>>>>>> d58f86cffb7eb2a37b1a7c95e9dc32f24656facd
   ],
 }

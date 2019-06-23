@@ -2,8 +2,13 @@
 title: "Miss Saigon"
 date: 2014-10-20T21:09:00.000+02:00
 type: article
+<<<<<<< HEAD
 author: "Jane Doe"
 mainImage: images/posts/sadness.jpg
+=======
+authorId: 1
+mainImage: ./images/posts/sadness.jpg
+>>>>>>> d58f86cffb7eb2a37b1a7c95e9dc32f24656facd
 featured: true
 ---
 <lead>
