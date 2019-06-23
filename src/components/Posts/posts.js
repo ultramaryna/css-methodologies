@@ -14,8 +14,6 @@ const Posts = ({version, isFeatured}) => {
       posts = posts.filter(post => !post.frontmatter.featured);
     }
 
-    console.log(posts);
-
     return (
       posts.map(post => {
         return (

@@ -3,7 +3,7 @@ title: 'Lorem ipsum dolor'
 date: 2018-10-20T21:09:00.000+02:00
 type: article
 author: Jon Snow
-mainImage: images/posts/ghost.jpg
+mainImage: images/posts/car.jpg
 featured: true
 ---
 

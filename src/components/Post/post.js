@@ -17,7 +17,6 @@ export default class BlogPost extends React.Component {
     const { data: { markdownRemark: post, authorsJson: author } } = this.props;
     const { title, date, type, mainImage } = post.frontmatter;
     const { location } = this.props;
-    console.log(author);
 
     const renderAst = new rehypeReact({
       createElement: React.createElement,
