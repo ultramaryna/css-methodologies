@@ -29,7 +29,7 @@
     order: 2;
     width: 35%;
     max-width: 440px;
-    max-height: 426px;
+    max-height: 326px;
     padding-top: 60px;
     position: relative;
     top: -80px;
@@ -69,5 +69,20 @@
   @media (min-width: $bp-main) {
     margin: 10px 20px 0 0;
     width: calc(60% - 20px);
+  }
+}
+
+.repertoire__choose {
+  font-family: $font-headings;
+  font-size: 26px;
+}
+
+.repertoire__choose-icon {
+  margin-left: 5px;
+  &:before {
+    transform: rotate(180deg);
+    @media (min-width: $bp-main) {
+      transform: rotate(-90deg);
+    }
   }
 }

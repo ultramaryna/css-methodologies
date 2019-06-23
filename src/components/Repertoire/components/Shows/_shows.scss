@@ -31,3 +31,58 @@
     top: 0;
   }
 }
+
+.shows__months-list {
+  list-style-type: none;
+}
+
+.shows__month-item {
+  @media (min-width: $bp-main) {
+    display: flex;
+    padding-left: 33px;
+  }
+}
+
+.shows__list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 2px solid $teal-lighter;
+  padding: 0 0 20px 20px;
+  margin-bottom: 30px;
+  @media (min-width: $bp-main) {
+    border-bottom: 0;
+    padding-bottom: 18px;
+    margin-bottom: 0
+  }
+}
+
+.shows__month {
+  font-family: $font-headings;
+  font-size: 18px;
+  margin-bottom: 28px;
+  @media (min-width: $bp-main) {
+    min-width: 120px;
+    font-size: 22px;
+  }
+}
+
+.shows__date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 61px;
+  height: 61px;
+  border-radius: 100%;
+  background-color: $white;
+  font-family: $font-headings;
+  color: $black;
+  margin: 0 20px 20px 0;
+  line-height: .8;
+}
+
+.shows__day {
+  font-size: 26px;
+  line-height: 1;
+}

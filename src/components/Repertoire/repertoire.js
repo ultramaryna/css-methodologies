@@ -46,6 +46,7 @@ class Repertoire extends React.Component {
                   name
                   theatres {
                     name
+                    shows
                   }
                 }
               }
@@ -61,6 +62,12 @@ class Repertoire extends React.Component {
             <div className="repertoire__shows-wrapper">
               {this.state.activeShow &&
                 <Shows showName={this.state.activeShow} data={data} />
+              }
+              {!this.state.activeShow &&
+                <p className="repertoire__choose">
+                  Wybierz spektakl
+                  <i className="icon-chevron repertoire__choose-icon" />
+                </p>
               }
             </div>
           </div>
