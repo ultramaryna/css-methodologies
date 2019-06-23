@@ -34,10 +34,10 @@ export default class BlogPost extends React.Component {
         <article className={`post post--${type}`}>
           <div
             className="post__banner"
-            style={{backgroundImage: `url(${type === 'article' ? mainImage : ''})`}}
+            style={{backgroundImage: `url(../../${type === 'article' ? mainImage : ''})`}}
           >
             {type === 'artist' &&
-              <DecoratedImage src={mainImage} alt={title} />
+              <DecoratedImage src={`../../${mainImage}`} alt={title} />
             }
             <h1 className="heading heading--main post__title">{post.frontmatter.title}</h1>
           </div>
