@@ -3,4 +3,4 @@
  *
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
-require('./src/assets/scss/styles.scss');
+require('./src/_settings/global.scss');
