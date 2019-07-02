@@ -6,4 +6,4 @@ const DecoratedImage = ({ src, alt }) => (
   </div>
 )
 
-export default DecoratedImage
+export default DecoratedImage;

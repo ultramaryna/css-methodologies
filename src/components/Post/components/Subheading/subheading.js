@@ -8,4 +8,4 @@ const Subheading = ({ children }) => (
   </h2>
 )
 
-export default Subheading
+export default Subheading;

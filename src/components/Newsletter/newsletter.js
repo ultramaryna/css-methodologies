@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const Newsletter = () => (
 
@@ -23,4 +23,4 @@ const Newsletter = () => (
 
 )
 
-export default Newsletter
+export default Newsletter;

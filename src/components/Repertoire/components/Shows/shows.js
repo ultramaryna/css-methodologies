@@ -1,13 +1,11 @@
-import PropTypes from "prop-types"
-import React from "react"
-import moment from 'moment'
+import React from "react";
+import moment from 'moment';
 import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemPanel, AccordionItemButton } from 'react-accessible-accordion';
 
 const Shows = ({showName, data}) => {
 
   const { allRepertoireJson: { edges: shows } } = data;
   const showNode = shows.find(show => show.node.name === showName);
-  console.log(showNode);
 
   const show = showNode ? showNode.node : '';
 
@@ -73,4 +71,4 @@ const Shows = ({showName, data}) => {
   );
 }
 
-export default Shows
+export default Shows;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import rehypeReact from "rehype-react"
 import Layout from '../Layout/layout';
 import SEO from '../Seo/seo';
@@ -15,8 +15,7 @@ export default class BlogPost extends React.Component {
 
   render() {
     const { data: { markdownRemark: post, authorsJson: author } } = this.props;
-    const { title, date, type, mainImage } = post.frontmatter;
-    const { location } = this.props;
+    const { title, type, mainImage } = post.frontmatter;
 
     const renderAst = new rehypeReact({
       createElement: React.createElement,

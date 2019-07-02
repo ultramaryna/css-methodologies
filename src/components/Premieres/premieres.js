@@ -1,5 +1,5 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
 
 const Premieres = () => {
   function renderPremieres(data) {
@@ -52,4 +52,4 @@ const Premieres = () => {
   )
 }
 
-export default Premieres
+export default Premieres;

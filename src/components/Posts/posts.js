@@ -17,7 +17,7 @@ const Posts = ({version, isFeatured}) => {
     return (
       posts.map(post => {
         return (
-          <PostBlock post={post} version={version} />
+          <PostBlock post={post} version={version} key={post.frontmatter.title}/>
         )
       })
     );

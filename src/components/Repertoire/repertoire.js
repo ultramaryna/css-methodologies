@@ -1,6 +1,5 @@
-import { Link } from "gatsby"
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
 
 import Shows from './components/Shows/shows';
 
@@ -77,4 +76,4 @@ class Repertoire extends React.Component {
   }
 }
 
-export default Repertoire
+export default Repertoire;

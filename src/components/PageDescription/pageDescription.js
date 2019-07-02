@@ -1,5 +1,5 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
 
 const PageDescription = () => {
   return (
@@ -24,4 +24,4 @@ const PageDescription = () => {
   )
 }
 
-export default PageDescription
+export default PageDescription;

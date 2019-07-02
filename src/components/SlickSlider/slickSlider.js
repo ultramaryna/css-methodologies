@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import Slider from "react-slick";
 
 const SlickSlider = ({children, customSettings }) => {
@@ -19,4 +19,4 @@ const SlickSlider = ({children, customSettings }) => {
   )
 }
 
-export default SlickSlider
+export default SlickSlider;

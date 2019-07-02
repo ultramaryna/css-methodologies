@@ -1,5 +1,5 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
 import Menu from './components/Menu/menu';
 import logo from '../../assets/images/logo.svg';
@@ -32,4 +32,4 @@ class Header extends React.Component {
   }
 }
 
-export default Header
+export default Header;

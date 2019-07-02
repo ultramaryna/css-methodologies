@@ -4,7 +4,11 @@ import React from "react"
 
 const PostBlock = ({post, version}) => (
   <article className={`posts__item posts__item--${version}`}>
-    <img src={post.frontmatter.mainImage} className="posts__image"/>
+    <img
+      src={post.frontmatter.mainImage}
+      className="posts__image"
+      alt={post.frontmatter.title}
+    />
     <div className="posts__content">
       <h2 className="heading posts__title">
         {version === 'horizontal' &&

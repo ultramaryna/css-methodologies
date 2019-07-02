@@ -1,6 +1,6 @@
-import React from "react"
-import { Link } from "gatsby"
-import { StaticQuery, graphql } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
+import { StaticQuery, graphql } from "gatsby";
 
 import SlickSlider from '../SlickSlider/slickSlider'
 import DecoratedImage from '../DecoratedImage/decoratedImage';
@@ -13,7 +13,7 @@ const Artists = () => {
         return (
             artists.map((artist) => {
                 return (
-                    <div className="artists__item">
+                    <div className="artists__item" key={artist.frontmatter.title}>
                         <DecoratedImage src={artist.frontmatter.mainImage} alt={artist.frontmatter.title} />
                         <div className="artists__content">
                           <h3 className="artists__title heading heading--violet">
@@ -59,4 +59,4 @@ const Artists = () => {
   )
 }
 
-export default Artists
+export default Artists;

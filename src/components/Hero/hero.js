@@ -1,5 +1,5 @@
-import { Link } from "gatsby"
-import React from "react"
+import { Link } from "gatsby";
+import React from "react";
 
 const Hero = () => {
 
@@ -19,4 +19,4 @@ const Hero = () => {
   );
 }
 
-export default Hero
+export default Hero;

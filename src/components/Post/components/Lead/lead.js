@@ -6,4 +6,4 @@ const Lead = ({ children }) => (
   </div>
 )
 
-export default Lead
+export default Lead;

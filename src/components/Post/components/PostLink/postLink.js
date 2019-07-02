@@ -6,4 +6,4 @@ const postLink = ({ href, children }) => (
   </a>
 )
 
-export default postLink
+export default postLink;

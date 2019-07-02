@@ -6,4 +6,4 @@ const PostImage = ({ src, alt }) => {
   );
 }
 
-export default PostImage
+export default PostImage;

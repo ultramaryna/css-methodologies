@@ -1,6 +1,6 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import SlickSlider from '../SlickSlider/slickSlider'
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
+import SlickSlider from "../SlickSlider/slickSlider";
 
 const Authors = () => {
   const slickSettings = {
@@ -27,7 +27,7 @@ const Authors = () => {
       authors.map((item) => {
         const {node: author} = item;
         return (
-          <div className="authors__item">
+          <div className="authors__item" key={author.id}>
             <img src={author.image} alt={author.name} className="authors__image"/>
             <h3 className="authors__name">{author.name}</h3>
           </div>
@@ -68,4 +68,4 @@ const Authors = () => {
 
 }
 
-export default Authors
+export default Authors;

@@ -1,5 +1,5 @@
-import PropTypes from "prop-types"
-import React from "react"
+import PropTypes from "prop-types";
+import React from "react";
 
 const Section = ({sectionName, children}) => (
   <section className={`section section--${sectionName}`} id={sectionName}>
@@ -15,7 +15,7 @@ Section.propTypes = {
 }
 
 Section.defaultProps = {
-  siteTitle: ``,
+  sectionName: ``,
 }
 
-export default Section
+export default Section;

@@ -1,6 +1,6 @@
-import { Link } from "gatsby"
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby";
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
 
 const Menu = ({ isOpen }) => {
 
@@ -43,4 +43,4 @@ const Menu = ({ isOpen }) => {
   )
 }
 
-export default Menu
+export default Menu;
