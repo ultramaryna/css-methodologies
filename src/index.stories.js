@@ -9,6 +9,7 @@ import Button from './atoms/Button/Button';
 import Title from './atoms/Title/Title';
 import Subtitle from './atoms/Subtitle/Subtitle';
 import CustomLink from './atoms/CustomLink/CustomLink';
+import Input from './atoms/Input/Input';
 
 storiesOf('Button', module)
   .addParameters({ options: { theme: themes.dark } })
@@ -31,14 +32,7 @@ storiesOf('Subtitle', module)
   .add('blue', () => <Subtitle color="blue">Subtitle</Subtitle>);
 
 storiesOf('CustomLink', module)
-  .add('default', () => <CustomLink>Link</CustomLink>)
+  .add('default', () => <CustomLink>Link</CustomLink>);
 
-// storiesOf('Button', module)
-//   .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
-//   .add('with some emoji', () => (
-//     <Button onClick={action('clicked')}>
-//       <span role="img" aria-label="so cool">
-//         😀 😎 👍 💯
-//       </span>
-//     </Button>
-//   ));
+storiesOf('Input', module)
+  .add('default', () => <Input placeholder="Name" type="text" />);
