@@ -1,0 +1,51 @@
+@mixin wrapper() {
+    padding: 0 $margin-mobile;
+    max-width: $content__width;
+    margin: 0 auto;
+    @media (min-width: $bp-main) {
+        padding: 0 30px;
+    }
+    @media (min-width: $screen-lg) {
+        padding: 0 $margin-desktop;
+    }
+}
+
+@mixin gradient-text() {
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@mixin underline($color, $height, $desktopHeight) {
+    background-image: linear-gradient(to right, $color, $color);
+    background-repeat: repeat-x;
+    background-position: 0 125%;
+    background-size: 100% $height;
+    @media (min-width: $screen-sm) {
+        background-size: 100% $desktopHeight;
+    }
+}
+
+@mixin visuallyHidden() {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+@mixin formColor($color) {
+  .form__input, .form__textarea {
+      border-color: $color;
+      color: $color;
+      &::placeholder {
+          color: $color;
+      }
+  }
+  .form__button {
+      background-color: $color;
+  }
+}

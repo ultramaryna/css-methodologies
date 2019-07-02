@@ -1,1 +1,10 @@
 @import './var';
+
+body {
+    font-family: $font-default;
+    font-size: 1rem;
+    font-weight: 400;
+    color: $text-color;
+    line-height: $line-height;
+    box-sizing: border-box;
+}

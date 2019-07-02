@@ -1,0 +1,12 @@
+@import '../../_settings/var';
+@import '../../_settings/mixins';
+
+.link {
+  color: $text-color;
+  position: relative;
+  text-decoration: none;
+  @include underline($teal-lighter, 10px, 10px);
+  &:hover, &:visited {
+      color: $text-color;
+  }
+}
