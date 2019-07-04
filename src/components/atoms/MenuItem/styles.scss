@@ -1,0 +1,31 @@
+@import '../../../_settings/var';
+@import '../../../_settings/mixins';
+
+.menu-item {
+    margin-bottom: 20px;
+    text-align: center;
+    @media (min-width: $bp-main) {
+        margin-bottom: 0;
+
+        &:nth-child(2) {
+            margin-right: 120px;
+        }
+    }
+}
+
+.menu-link {
+    font-family: $font-headings;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $white;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    line-height: 22px;
+    text-align: center;
+
+    &:hover {
+        background-image: $gradient-multicolor;
+        @include gradient-text();
+    }
+}

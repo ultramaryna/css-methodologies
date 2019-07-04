@@ -1,0 +1,49 @@
+@import '../../../_settings/var';
+@import '../../../_settings/mixins';
+
+.post {
+  margin-bottom: 43px;
+  color: $white;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $bp-main) {
+      width: calc((100% - 80px) / 3);
+  }
+  @media (min-width: $screen-lg) {
+      width: calc((100% - 120px) / 3);
+  }
+
+  img {
+      max-width: 100%;
+      margin-bottom: 20px;
+      align-self: center;
+      @media (min-width: $bp-main) {
+        margin-bottom: 33px;
+      }
+  }
+
+  h2 {
+      font-size: 22px;
+      line-height: 28px;
+      letter-spacing: 3px;
+      color: $white;
+      margin-bottom: 20px;
+      text-transform: none;
+      @media (min-width: $bp-main) {
+        font-size: 26px;
+        line-height: 32px;
+        min-height: 64px;
+        margin-bottom: 36px;
+      }
+  }
+
+  p {
+      margin-bottom: 21px;
+  }
+
+  a {
+    align-self: flex-start;
+  }
+}
