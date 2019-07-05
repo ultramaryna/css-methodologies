@@ -46,4 +46,40 @@
   a {
     align-self: flex-start;
   }
+
+  &.horizontal {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 38px;
+    @media (min-width: $bp-main) {
+        flex-direction: row;
+        margin-bottom: 60px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: $bp-main) {
+            margin-left: 20px;
+        }
+        @media (min-width: $screen-lg) {
+            margin-left: 60px;
+        }
+    }
+
+    img {
+        margin-bottom: 25px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 21px;
+        min-height: 0;
+        text-transform: uppercase;
+        @media (min-width: $bp-main) {
+          font-size: 26px;
+          line-height: 32px;
+        }
+    }
+  }
 }
