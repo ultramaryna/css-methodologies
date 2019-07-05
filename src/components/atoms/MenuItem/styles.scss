@@ -1,7 +1,7 @@
 @import '../../../_settings/var';
 @import '../../../_settings/mixins';
 
-.menu-item {
+.a-menuIitem {
     margin-bottom: 20px;
     text-align: center;
     @media (min-width: $bp-main) {
@@ -13,7 +13,7 @@
     }
 }
 
-.menu-link {
+.a-menuItem_link {
     font-family: $font-headings;
     text-transform: uppercase;
     text-decoration: none;

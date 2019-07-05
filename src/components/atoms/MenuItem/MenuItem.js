@@ -3,8 +3,8 @@ import { Link } from "gatsby"
 import "./styles.scss";
 
 const MenuItem = ({ link, title }) => (
-  <li className="menu-item">
-    <Link to={link} className="menu-link">
+  <li className="a-menuItem">
+    <Link to={link} className="a-menuItem_link">
       {title}
     </Link>
   </li>

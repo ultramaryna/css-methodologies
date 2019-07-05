@@ -1,7 +1,7 @@
 @import '../../../_settings/var';
 @import '../../../_settings/mixins';
 
-.post {
+.m-post {
   margin-bottom: 43px;
   color: $white;
   &:last-of-type {
@@ -15,7 +15,7 @@
       width: calc((100% - 120px) / 3);
   }
 
-  img {
+  .m-post_img {
       max-width: 100%;
       margin-bottom: 20px;
       align-self: center;
@@ -24,7 +24,7 @@
       }
   }
 
-  h2 {
+  .m-post_title {
       font-size: 22px;
       line-height: 28px;
       letter-spacing: 3px;
@@ -39,39 +39,42 @@
       }
   }
 
-  p {
+  .m-post_text {
       margin-bottom: 21px;
   }
 
-  a {
+  .m-post_link {
     align-self: flex-start;
   }
 
-  &.horizontal {
+  &.-horizontal {
     display: flex;
     flex-direction: column;
+    width: 100%;
     margin-bottom: 38px;
     @media (min-width: $bp-main) {
         flex-direction: row;
         margin-bottom: 60px;
     }
 
-    .content {
+    .m-post_content {
         display: flex;
         flex-direction: column;
         @media (min-width: $bp-main) {
             margin-left: 20px;
+            align-items: flex-start;
         }
         @media (min-width: $screen-lg) {
             margin-left: 60px;
         }
     }
 
-    img {
+    .m-post_img {
         margin-bottom: 25px;
+        align-self: center;
     }
 
-    h2 {
+    .m-post_title {
         font-size: 20px;
         margin-bottom: 21px;
         min-height: 0;
@@ -80,6 +83,10 @@
           font-size: 26px;
           line-height: 32px;
         }
+    }
+
+    .m-post_link {
+      align-self: flex-start;
     }
   }
 }

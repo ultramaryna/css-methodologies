@@ -1,28 +1,28 @@
 @import '../../../_settings/var';
 @import '../../../_settings/mixins';
 
-.section {
+.a-section {
   padding: 40px 0;
   position: relative;
   @media (min-width: $screen-lg) {
       padding: 80px 0;
   }
 
-  .content {
+  .a-section_content {
     @include wrapper();
   }
 
-  &.featured-posts, &.posts, &.premieres, &.authors {
+  &.-featured-posts, &.-posts, &.-premieres, &.-authors {
       background-color: $grey;
       color: $white;
   }
 
-  &.artists {
+  &.-artists {
       background-color: $purple;
       color: $white;
   }
 
-  &.banner {
+  &.-banner {
       display: flex;
       align-items: flex-end;
       height: 200px;
@@ -49,7 +49,7 @@
       font-size: 20px;
   }
 
-  &.newsletter {
+  &.-newsletter {
       background-color: $yellow;
       padding: 14px 0 30px;
       @media (min-width: $bp-main) {
@@ -57,12 +57,12 @@
       }
   }
 
-  &.contact {
+  &.-contact {
     background-color: $blue;
     color: $white;
   }
 
-  &.repertoire {
+  &.-repertoire {
     background-color: $teal;
     color: $white;
   }

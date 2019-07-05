@@ -1,8 +1,8 @@
 import React from "react"
 import styles from "./styles.scss";
 
-const Text = ({ children }) => (
-  <p className="text">
+const Text = ({ children, extraClass }) => (
+  <p className={`a-text ${extraClass ? extraClass : ''}`}>
     {children}
   </p>
 )

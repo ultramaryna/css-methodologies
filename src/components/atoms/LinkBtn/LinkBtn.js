@@ -3,8 +3,11 @@ import React from "react"
 import { Link } from "gatsby"
 import styles from "./styles.scss";
 
-const LinkBtn = ({ variant, children, link }) => (
-  <Link to={link} className={`button ${variant}`}>
+const LinkBtn = ({ variant, children, link, extraClass }) => (
+  <Link
+    to={link}
+    className={`a-linkBtn -${variant} ${extraClass ? extraClass : ''}`}
+  >
     {children}
   </Link>
 )

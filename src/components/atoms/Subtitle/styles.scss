@@ -1,7 +1,7 @@
 @import '../../../_settings/var';
 @import '../../../_settings/mixins';
 
-.subtitle {
+.a-subtitle {
   position: relative;
   font-family: $font-headings;
   font-weight: 900;
@@ -16,25 +16,25 @@
       font-size: 32px;
   }
 
-  &.lowercase {
+  &.-lowercase {
     font-size: 26px;
     text-transform: none;
   }
 
-  .content {
-    &.grey {
+  .a-subtitle_content {
+    &.-grey {
       @include underline($grey-lighter, 15px, 20px);
     }
-    &.teal {
+    &.-teal {
       @include underline($teal-lighter, 15px, 24px);
     }
-    &.violet {
+    &.-violet {
       @include underline($purple-lighter, 15px, 24px);
     }
-    &.turquoise {
+    &.-turquoise {
       @include underline($turqoise-lighter, 15px, 24px);
     }
-    &.blue {
+    &.-blue {
       @include underline($blue-lighter, 15px, 24px);
     }
   }

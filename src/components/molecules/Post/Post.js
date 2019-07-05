@@ -7,20 +7,23 @@ import Text from '../../atoms/Text/Text';
 import LinkBtn from '../../atoms/LinkBtn/LinkBtn';
 
 const Post = ({ title, image, type, link, children }) => (
-  <article className={`post ${type}`}>
-    <Image src={image} alt={image} className="image"/>
-    <div className="content">
+  <article className={`m-post -${type}`}>
+    <Image src={image} alt={image} extraClass="m-post_img"/>
+    <div className="m-post_content">
       <Subtitle
-        className="title"
+        extraClass="m-post_title"
         isLowercase={type === 'vertical'}
         color={type === 'horizontal' ? 'grey' : ''}
       >
         {title}
       </Subtitle>
-      <Text className="excerpt">{children}</Text>
+      {type === 'horizontal' &&
+        <Text extraClass="m-post_text">{children}</Text>
+      }
       <LinkBtn
         link={link}
         variant={type === 'vertical' ? 'secondary' : 'primary'}
+        extraClass="m-post_link"
       >
         Czytaj
       </LinkBtn>

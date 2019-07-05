@@ -1,6 +1,6 @@
 @import '../../../_settings/var';
 
-.decorated-image {
+.a-decoratedImage {
     position: relative;
     display: flex;
     justify-content: center;
@@ -21,7 +21,7 @@
         }
     }
 
-    img {
+    .a-decoratedImage_img {
       width: 260px;
       margin: 0 auto;
       z-index: 1;

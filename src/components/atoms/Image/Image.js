@@ -1,8 +1,12 @@
 import React from "react"
 import styles from "./styles.scss";
 
-const Image = ({ src, alt, className }) => (
-  <img className="img" alt={alt} src={src} className={className} />
+const Image = ({ src, alt, extraClass }) => (
+  <img
+    className={`a-img ${extraClass ? extraClass : ''}`}
+    alt={alt}
+    src={src}
+  />
 )
 
 export default Image
