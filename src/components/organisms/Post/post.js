@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, graphql } from "gatsby";
-import Layout from '../layout';
-import SEO from '../seo';
+import Layout from '../../templates/layout';
+import SEO from '../../atoms/Seo/seo';
 
 export default class BlogPost extends React.Component {
 

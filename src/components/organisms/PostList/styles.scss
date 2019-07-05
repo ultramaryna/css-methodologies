@@ -1,0 +1,16 @@
+.postList {
+    @media (min-width: $bp-main) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+  &.-horizontal {
+      flex-direction: column;
+  }
+
+  &.-horizontal {
+      .m-post {
+          width: 100%;
+      }
+  }
+}

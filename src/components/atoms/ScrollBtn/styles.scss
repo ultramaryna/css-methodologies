@@ -1,0 +1,13 @@
+@import '../../../_settings/var';
+
+.a-scrollBtn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    border: 0;
+    font-size: 36px;
+    color: $teal;
+    z-index: 1;
+}

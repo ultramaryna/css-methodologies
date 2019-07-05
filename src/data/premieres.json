@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Aida",
+    "link": "https://www.teatrroma.pl/",
+    "images": {
+      "mobile": "images/premieres/1-mobile.jpg",
+      "desktop": "images/premieres/1-desktop.jpg"
+    }
+  }, {
+    "title": "Notre Dame de Paris",
+    "link": "https://www.muzyczny.org/pl/",
+    "images": {
+      "mobile": "images/premieres/2-mobile.jpg",
+      "desktop": "images/premieres/2-desktop.jpg"
+    }
+  }, {
+    "title": "Chicago",
+    "link": "https://teatrvariete.pl/",
+    "images": {
+      "mobile": "images/premieres/3-mobile.jpg",
+      "desktop": "images/premieres/3-desktop.jpg"
+    }
+  }, {
+    "title": "Dźwięki muzyki",
+    "link": "https://teatr.gliwice.pl/",
+    "images": {
+      "mobile": "images/premieres/4-mobile.jpg",
+      "desktop": "images/premieres/4-desktop.jpg"
+    }
+  }, {
+    "title": "Wiedźmin",
+    "link": "https://www.muzyczny.org/pl/",
+    "images": {
+      "mobile": "images//premieres/5-mobile.jpg",
+      "desktop": "images/premieres/5-desktop.jpg"
+    }
+  }
+]
