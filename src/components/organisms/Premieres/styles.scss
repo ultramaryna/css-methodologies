@@ -4,7 +4,7 @@
 .o-premieres {
     color: $white;
     &:hover {
-        .premieres__heading {
+        .o-premieres_title {
             opacity: 0;
             display: none;
         }
