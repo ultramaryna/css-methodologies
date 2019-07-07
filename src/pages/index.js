@@ -8,6 +8,8 @@ import Premieres from "../components/organisms/Premieres/Premieres"
 import PostList from "../components/organisms/PostList/PostList";
 import PageDescription from "../components/molecules/PageDescription/PageDescription";
 import Banner from "../components/molecules/Banner/Banner";
+import Artists from "../components/organisms/Artists/Artists";
+import Newsletter from "../components/organisms/Newsletter/Newsletter";
 
 const IndexPage = ({ location }) => (
 
@@ -19,9 +21,11 @@ const IndexPage = ({ location }) => (
     <Hero />
     <PostList isFeatured type="featured-posts" />
     <Premieres />
+    <Artists />
     <PostList type="posts" />
     <Banner title="O musicalu" />
     <PageDescription />
+    <Newsletter />
   </Layout>
 )
 

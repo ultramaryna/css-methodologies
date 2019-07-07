@@ -27,7 +27,7 @@
       z-index: 1;
       align-self: center;
       @media (min-width: $bp-main) {
-          width: 380px;
+            min-width: 380px;
       }
     }
 }

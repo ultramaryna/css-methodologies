@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import styles from "./styles.scss";
 
 const CustomLink = ({ title, href, children, extraClass }) => (
-  <Link to="" className={`a-link ${extraClass ? extraClass : ''}`}>
+  <Link to={href} className={`a-link ${extraClass ? extraClass : ''}`}>
     {children}
   </Link>
 )

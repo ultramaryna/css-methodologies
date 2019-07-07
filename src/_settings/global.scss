@@ -3,6 +3,10 @@
 @import './mixins';
 @import './fonts';
 
+// Slick
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 body {
     font-family: $font-default;
     font-size: 1rem;

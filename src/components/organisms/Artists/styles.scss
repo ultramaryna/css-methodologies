@@ -1,0 +1,10 @@
+@import '../../../_settings/var';
+
+.o-artists {
+    @media (min-width: $bp-main) {
+        padding: 0 30px;
+    }
+    @media (min-width: $bp-main) {
+        padding: 0 80px;
+    }
+}

@@ -1,0 +1,29 @@
+@import '../../../_settings/var';
+
+.m-artist {
+    text-align: center;
+    @media (min-width: $bp-main) {
+        display: flex !important;
+        align-items: center;
+        text-align: left;
+    }
+}
+
+.m-artist_title {
+    margin-bottom: 27px;
+    font-size: 26px;
+    @media (min-width: $bp-main) {
+      font-size: 38px;
+    }
+}
+
+.m-artist_bio {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.m-artist_content {
+    @media (min-width: $bp-main) {
+        margin-left: 60px;
+    }
+}

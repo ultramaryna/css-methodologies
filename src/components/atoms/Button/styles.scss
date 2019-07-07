@@ -1,0 +1,24 @@
+@import '../../../_settings/var';
+
+.a-btn {
+    border: 0;
+    padding: 15px 47px;
+    align-self: flex-start;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 900;
+    line-height: 19px;
+    letter-spacing: 3px;
+    color: $white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .2s ease-in;
+
+    &.-brown {
+        background-color: $brown;
+    }
+
+    &.-blue {
+        background-color: $blue-lighter;
+    }
+}

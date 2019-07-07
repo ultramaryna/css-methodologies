@@ -1,0 +1,26 @@
+@import '../../../_settings/var';
+
+.m-newsletterForm {
+    display: flex;
+    @media (min-width: $screen-sm) {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+}
+
+.a-input.m-newsletterForm_input {
+    @media (min-width: $screen-sm) {
+        margin-bottom: 0;
+        width: 420px;
+        border-width: 5px;
+        font-size: 18px;
+    }
+}
+
+.a-btn.m-newsletterForm_btn {
+    @media (min-width: $screen-sm) {
+        margin-left: 40px;
+        align-self: stretch;
+        font-size: 18px;
+    }
+}

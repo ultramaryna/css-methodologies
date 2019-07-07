@@ -11,4 +11,18 @@
   @media (min-width: $screen-sm) {
       padding: 15px 26px;
   }
+
+  &.-brown {
+    border-color: $brown;
+    &::placeholder {
+      color: $brown;
+    }
+  }
+
+  &.-blue {
+    border-color: $blue-lighter;
+    &::placeholder {
+      color: $blue-lighter;
+    }
+  }
 }
