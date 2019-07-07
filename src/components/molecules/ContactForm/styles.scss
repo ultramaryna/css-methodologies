@@ -1,0 +1,10 @@
+@import '../../../_settings/var';
+
+.m-contactForm {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $bp-main) {
+      width: 480px;
+      margin-left: 40px;
+    }
+  }

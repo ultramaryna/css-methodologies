@@ -1,0 +1,17 @@
+@import '../../../_settings/var';
+
+.o-contact {
+    @media (min-width: $bp-main) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  
+  .o-contact_info {
+    max-width: 440px;
+  }
+  
+  .o-contact_text {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }

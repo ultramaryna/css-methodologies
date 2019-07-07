@@ -1,0 +1,28 @@
+@import '../../../_settings/var';
+
+.a-textarea {
+  padding: 14px 20px;
+  margin-bottom: 15px;
+  border: 3px solid $white;
+  background-color: transparent;
+  font-family: $font-text;
+  font-weight: 900;
+  font-size: 16px;
+  @media (min-width: $screen-sm) {
+      padding: 15px 26px;
+  }
+
+  &.-brown {
+    border-color: $brown;
+    &::placeholder {
+      color: $brown;
+    }
+  }
+
+  &.-blue {
+    border-color: $blue-lighter;
+    &::placeholder {
+      color: $blue-lighter;
+    }
+  }
+}
