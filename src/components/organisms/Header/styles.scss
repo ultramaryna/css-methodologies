@@ -1,0 +1,40 @@
+@import '../../../_settings/var';
+
+.o-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: $warm-grey;
+    padding: 4px 21px 4px 0;
+    z-index: 20;
+    overflow: visible;
+    @media (min-width: $bp-main) {
+        height: 60px;
+        padding: 0;
+    }
+
+    &.-menuActive {
+        box-shadow: none;
+        .a-logo {
+            top: 256px;
+            transition: .25s ease-in-out .1s;
+            transform: rotate(360deg);
+        }
+    }
+}
+
+.o-header_toggleMobile {
+    font-size: 28px;
+    color: $white;
+    margin: 0 21px 0 auto;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    @media (min-width: $bp-main) {
+        display: none;
+    }
+}

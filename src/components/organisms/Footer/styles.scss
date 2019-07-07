@@ -1,0 +1,37 @@
+@import '../../../_settings/var';
+@import '../../../_settings/mixins';
+
+.o-footer {
+    @include wrapper();
+    background-color: $grey;
+    color: $white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @media (min-width: $bp-main) {
+        display: flex;
+        padding-top: 67px;
+        padding-bottom: 50px;
+    }
+}
+
+.o-footer_text {
+    margin-bottom: 24px;
+    @media (min-width: $bp-main) {
+        width: 50%;
+    }
+}
+
+.o-footer_version {
+    font-family: $font-headings;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 36px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    @media (min-width: $bp-main) {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

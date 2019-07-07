@@ -1,0 +1,22 @@
+@import '../../../_settings/var';
+
+.m-banner {
+    display: flex;
+    align-items: flex-end;
+    height: 200px;
+    background-image: url(/images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    @media (min-width: $bp-main) {
+        height: 360px;
+    }
+
+    .a-section_content {
+        margin: 0;
+    }
+
+    .m-banner_title {
+        margin-bottom: 0;
+        color: $turqoise;
+    }
+}

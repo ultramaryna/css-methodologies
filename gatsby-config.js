@@ -3,6 +3,7 @@ module.exports = {
     title: `Metodyki CSS - BEM`,
     description: `Analiza efektywności i użyteczności metodyk CSS - implementacja strony w BEM`,
     author: `@ultramaryna`,
+    logo: '/images/logo.svg'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
