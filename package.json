@@ -35,7 +35,8 @@
     "babel-loader": "^8.0.6",
     "moment": "^2.24.0",
     "prettier": "^1.17.0",
-    "react-slick": "^0.24.0"
+    "react-slick": "^0.24.0",
+    "rehype-react": "^3.1.0"
   },
   "keywords": [
     "gatsby"
