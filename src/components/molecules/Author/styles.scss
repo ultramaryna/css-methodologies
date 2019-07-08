@@ -1,0 +1,28 @@
+@import '../../../_settings/var';
+
+.m-author {
+    display: flex !important;
+    align-items: center;
+    @media (min-width: $bp-main) {
+      flex-direction: column;
+    }
+  }
+  
+  .m-author_image {
+      align-self: center;
+      max-width: 164px;
+      margin-right: 17px;
+      @media (min-width: $bp-main) {
+        margin: 0 0 14px 0;
+        max-width: 271px;
+      }
+  }
+  
+  .m-author_name {
+    text-align: center;
+    font-family: $font-headings;
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 28px;
+    letter-spacing: 3px;
+  }

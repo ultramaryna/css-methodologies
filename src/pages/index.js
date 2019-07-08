@@ -11,6 +11,7 @@ import Banner from "../components/molecules/Banner/Banner";
 import Artists from "../components/organisms/Artists/Artists";
 import Newsletter from "../components/organisms/Newsletter/Newsletter";
 import Contact from "../components/organisms/Contact/Contact";
+import Authors from "../components/organisms/Authors/Authors";
 
 const IndexPage = ({ location }) => (
 
@@ -27,6 +28,7 @@ const IndexPage = ({ location }) => (
     <Banner title="O musicalu" />
     <PageDescription />
     <Newsletter />
+    <Authors />
     <Contact />
   </Layout>
 )
