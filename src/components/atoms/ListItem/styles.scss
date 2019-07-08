@@ -1,0 +1,17 @@
+@import '../../../_settings/var';
+
+.a-listItem {
+    font-family: $font-headings;
+    font-size: 18px;
+    letter-spacing: 4.5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    @media (min-width: $bp-main) {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+  
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }

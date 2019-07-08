@@ -1,0 +1,70 @@
+@import '../../../_settings/var';
+
+.m-showDates_title {
+    @media (min-width: $bp-main) {
+      margin-bottom: 20px;
+    }
+  }
+  
+  .m-showDates_theatres {
+    list-style-type: none;
+  }
+  
+  .m-showDates_theatreName {
+    font-size: 18px;
+    font-family: $font-headings;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4.5px;
+    margin-bottom: 22px;
+    @media (min-width: $screen-lg) {
+      font-size: 22px;
+    }
+  }
+  
+  .m-showDates_theatreExpand {
+    position: relative;
+    padding-right: 30px;
+    &:after {
+      content: '\E800';
+      font-family: 'fontello';
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+  
+  .m-showDates_monthsList {
+    list-style-type: none;
+  }
+  
+  .m-showDates_monthItem {
+    @media (min-width: $bp-main) {
+      display: flex;
+      padding-left: 33px;
+    }
+  }
+  
+  .m-showDates_list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid $teal-lighter;
+    padding: 0 0 20px 20px;
+    margin-bottom: 30px;
+    @media (min-width: $bp-main) {
+      border-bottom: 0;
+      padding-bottom: 18px;
+      margin-bottom: 0
+    }
+  }
+  
+  .m-showDates_month {
+    font-family: $font-headings;
+    font-size: 18px;
+    margin-bottom: 28px;
+    @media (min-width: $bp-main) {
+      min-width: 120px;
+      font-size: 22px;
+    }
+  }

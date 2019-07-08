@@ -12,6 +12,7 @@ import Artists from "../components/organisms/Artists/Artists";
 import Newsletter from "../components/organisms/Newsletter/Newsletter";
 import Contact from "../components/organisms/Contact/Contact";
 import Authors from "../components/organisms/Authors/Authors";
+import Repertoire from "../components/organisms/Repertoire/Repertoire";
 
 const IndexPage = ({ location }) => (
 
@@ -22,6 +23,7 @@ const IndexPage = ({ location }) => (
     />
     <Hero />
     <PostList isFeatured type="featured-posts" />
+    <Repertoire />
     <Premieres />
     <Artists />
     <PostList type="posts" />

@@ -1,0 +1,43 @@
+@import '../../../_settings/var';
+
+.o-repertoire {
+  @media (min-width: $bp-main) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.o-repertoire_heading {
+  @media (min-width: $bp-main) {
+    flex: 1 1 100%;
+    z-index: 2;
+  }
+
+  @media (min-width: $screen-lg) {
+    font-size: 110px;
+  }
+}
+
+.o-repertoire_showsWrapper {
+  margin-top: 50px;
+  @media (min-width: $bp-main) {
+    margin: 10px 20px 0 0;
+    width: calc(60% - 20px);
+  }
+}
+
+.o-repertoire_choose {
+  font-family: $font-headings;
+  font-size: 26px;
+}
+
+.o-repertoire_chooseIcon {
+  margin-left: 5px;
+  &:before {
+    transform: rotate(180deg);
+    @media (min-width: $bp-main) {
+      transform: rotate(-90deg);
+    }
+  }
+}
