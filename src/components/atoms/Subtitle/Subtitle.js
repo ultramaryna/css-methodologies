@@ -4,7 +4,7 @@ import styles from "./styles.scss";
 
 const Subtitle = ({ level, isDecorative, isLowercase, children, color, extraClass }) => {
   const classes = `a-subtitle ${isLowercase ? '-lowercase' : ''} ${extraClass ? extraClass : ''}`;
-  const content = !color
+  const content = color === 'none'
     ? children
     : <span className={`a-subtitle_content -${color}`}>{children}</span>;
 
@@ -24,7 +24,7 @@ const Subtitle = ({ level, isDecorative, isLowercase, children, color, extraClas
 }
 
 Subtitle.defaultProps = {
-  color: ``,
+  color: `grey`,
   level: 2
 }
 

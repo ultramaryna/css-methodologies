@@ -1,0 +1,38 @@
+@import '../../../_settings/var';
+@import '../../../_settings/mixins';
+
+.o-postContent {
+    @include wrapper();
+    max-width: $post__width;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  
+    @media (min-width: $bp-main) {
+      padding-top: 102px;
+      padding-bottom: 102px;
+    }
+
+    &.-article {
+      
+        .a-subtitle {
+            color: $black;
+            .a-subtitle_content {
+                @include underline($teal-lighter, 20px, 27px);
+            }
+        }
+    }
+
+    &.-artist {
+
+        .a-subtitle {
+            color: $black;
+            .a-subtitle_content {
+                @include underline($pink, 20px, 27px);
+            }
+        }
+      
+        .a-link {
+            @include underline($pink, 10px, 10px);
+        }
+    }
+}
