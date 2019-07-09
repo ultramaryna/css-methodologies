@@ -2,7 +2,7 @@
 title: 'Miss Saigon'
 date: 2017-10-20T21:09:00.000+02:00
 type: article
-authorId: Geralt z Rivii
+author: Geralt z Rivii
 mainImage: ./images/posts/sadness.jpg
 featured: true
 ---

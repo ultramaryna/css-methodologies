@@ -6,23 +6,63 @@
     @media (min-width: $bp-main) {
       flex-direction: column;
     }
-  }
-  
-  .m-author_image {
-      align-self: center;
-      max-width: 164px;
-      margin-right: 17px;
-      @media (min-width: $bp-main) {
-        margin: 0 0 14px 0;
-        max-width: 271px;
+
+    &.-standalone {
+      color: $white;
+      padding: 40px;
+      background-color: $article__accent-color;
+
+      .m-author_image {
+        max-width: 240px;
+        display: block;
+        margin: 0 auto 30px;
+        @media (min-width: $bp-main) {
+          align-self: center;
+          margin: 0 60px 0 0;
+        }
       }
+
+      .m-author_name {
+        margin-bottom: 26px;
+        text-align: center;
+        @media (min-width: $bp-main) {
+          text-align: left;
+        }
+      }
+    }
+
+    &.-artist {
+      background-color: $grey-light;
+    }
+}
+
+.m-author_content {
+  max-width: $post__width;
+  margin: 0 auto;
+  text-align: center;
+  @media (min-width: $bp-main) {
+    display: flex;
+    align-items: center;
+    text-align: left;
   }
+}
   
-  .m-author_name {
-    text-align: center;
-    font-family: $font-headings;
-    font-size: 22px;
-    font-weight: 900;
-    line-height: 28px;
-    letter-spacing: 3px;
-  }
+.m-author_image {
+    align-self: center;
+    max-width: 164px;
+    margin-right: 17px;
+    @media (min-width: $bp-main) {
+      margin: 0 0 14px 0;
+      max-width: 271px;
+    }
+}
+
+.m-author_name {
+  text-align: center;
+  font-family: $font-headings;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 28px;
+  letter-spacing: 3px;
+  margin-bottom: 26px;
+}
