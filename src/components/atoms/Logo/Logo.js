@@ -1,7 +1,6 @@
-import PropTypes from "prop-types"
 import React from "react";
 import { Link, StaticQuery } from "gatsby";
-import styles from "./styles.scss";
+import "./styles.scss";
 
 const Logo = ({ src }) => {
     return (

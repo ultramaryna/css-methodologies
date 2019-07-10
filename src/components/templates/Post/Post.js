@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from "gatsby";
-import Layout from '../layout';
+import Layout from '../Layout/layout';
 import SEO from "../../atoms/Seo/seo";
 import Author from "../../molecules/Author/Author";
 import PostContent from "../../organisms/PostContent/PostContent";

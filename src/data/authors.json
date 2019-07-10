@@ -13,11 +13,11 @@
     "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   }, {
     "name": "Maria Nowak",
-    "image": "/images/team/annanowak.png",
+    "image": "/images/team/marianowak.png",
     "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   }, {
-    "name": "Jan Kowalski",
-    "image": "/images/team/jankowalski.png",
+    "name": "Geralt z Rivii",
+    "image": "/images/team/geraltzrivii.png",
     "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   }
 ]

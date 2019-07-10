@@ -16,12 +16,10 @@ class Repertoire extends React.Component {
   }
 
   displayShows = (show) => {
-    console.log(this);
     this.setState({ activeShow: show.name });
   }
 
   render() {
-    console.log(this);
     return (
       <StaticQuery
         query={graphql`

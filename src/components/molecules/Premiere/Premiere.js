@@ -1,8 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
-import styles from "./styles.scss";
-
-import Image from '../../atoms/Image/Image';
 
 const Premiere = ({ imageDesktop, image, link, title }) => (
   <div className="m-premiere">

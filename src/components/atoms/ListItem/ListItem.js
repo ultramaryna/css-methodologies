@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./styles.scss";
+import "./styles.scss";
 
 const ListItem = ({ children, extraClass, onClick, show }) => (
   <li className={`a-listItem ${extraClass ? extraClass : ''}`} onClick={() => onClick(show)}>

@@ -1,6 +1,7 @@
 import React from "react";
 import moment from "moment";
 import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemPanel, AccordionItemButton } from 'react-accessible-accordion';
+import "./styles.scss";
 
 import Date from "../../atoms/Date/Date";
 import ListItem from "../../atoms/ListItem/ListItem";
@@ -15,18 +16,15 @@ const ShowDates = ({showName, data}) => {
 
   const renderShowDates = (dates) => {
     const list = {};
-    dates.forEach(date => {
+    dates.forEach(item => {
       moment.locale("pl");
-      date = moment(new Date(date));
+      const date = moment(new Date(item));
       const month = date.locale("pl").format('MMMM');
       if (!(month in list)) {
         list[month] = [];
       }
       list[month].push(date);
-      console.log(list);
     });
-
-    console.log(list);
 
     return (
       <ul className="m-showDates_monthsList">

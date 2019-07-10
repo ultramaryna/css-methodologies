@@ -3,7 +3,6 @@ import { StaticQuery, graphql } from "gatsby";
 
 import Section from "../../atoms/Section/Section";
 import Subtitle from "../../atoms/Subtitle/Subtitle";
-import Text from "../../atoms/Text/Text";
 
 const PageDescription = () => {
   return (

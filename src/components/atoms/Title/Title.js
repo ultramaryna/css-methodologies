@@ -1,6 +1,5 @@
-import PropTypes from "prop-types"
 import React from "react"
-import styles from "./styles.scss";
+import "./styles.scss";
 
 const Title = ({ variant, children, level, extraClass }) => {
   const classes = `a-title -${variant} ${extraClass ? extraClass : ''}`;

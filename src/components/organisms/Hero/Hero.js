@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./styles.scss";
+import "./styles.scss";
 
 import Section from '../../atoms/Section/Section';
 import Title from '../../atoms/Title/Title';

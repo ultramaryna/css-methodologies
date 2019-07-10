@@ -1,6 +1,5 @@
-import PropTypes from "prop-types"
 import React from "react"
-import styles from "./styles.scss";
+import "./styles.scss";
 
 const Subtitle = ({ level, isDecorative, isLowercase, children, color, extraClass }) => {
   const classes = `a-subtitle ${isLowercase ? '-lowercase' : ''} ${extraClass ? extraClass : ''}`;

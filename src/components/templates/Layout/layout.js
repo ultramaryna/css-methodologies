@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Header from "../organisms/Header/Header";
-import Footer from "../organisms/Footer/Footer";
-import ScrollToTop from "../atoms/ScrollToTop/ScrollToTop";
+import Header from "../../organisms/Header/Header";
+import Footer from "../../organisms/Footer/Footer";
+import ScrollToTop from "../../atoms/ScrollToTop/ScrollToTop";
 
 const Layout = ({ children }) => (
   <>

@@ -1,7 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 import { StaticQuery, graphql } from "gatsby"
-import styles from "./styles.scss";
+import "./styles.scss";
 
 import Premiere from '../../molecules/Premiere/Premiere';
 import Section from '../../atoms/Section/Section';

@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./styles.scss";
+import "./styles.scss";
 
 const Input = ({ id, name,type, color, placeholder, extraClass }) => (
   <input

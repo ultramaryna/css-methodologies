@@ -1,7 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 
-import Layout from "../components/templates/layout"
+import Layout from "../components/templates/Layout/layout"
 import SEO from "../components/atoms/Seo/seo"
 import Hero from "../components/organisms/Hero/Hero"
 import Premieres from "../components/organisms/Premieres/Premieres"

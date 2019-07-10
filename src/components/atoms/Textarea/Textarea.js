@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./styles.scss";
+import "./styles.scss";
 
 const Textarea = ({ id, name, color, placeholder, rows, extraClass }) => (
   <textarea
