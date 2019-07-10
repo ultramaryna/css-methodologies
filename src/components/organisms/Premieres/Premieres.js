@@ -47,7 +47,7 @@ const Premieres = ({ premieres }) => {
       render={data => (
         <Section name="premieres">
           <div className="o-premieres">
-            <Title extraClass="o-premieres_title">Premiery</Title>
+            <Title extraClass="o-premieres_title" level="2">Premiery</Title>
             <div className="o-premieres_list">
               {renderPremieres(data)}
             </div>

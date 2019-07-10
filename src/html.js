@@ -11,7 +11,7 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700|Monoton|Raleway&amp;subset=latin-ext" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700|Monoton|Raleway:400,800&display=swap&subset=latin-ext" rel="stylesheet" />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

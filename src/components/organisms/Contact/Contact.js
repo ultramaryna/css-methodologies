@@ -9,7 +9,7 @@ import ContactForm from "../../molecules/ContactForm/ContactForm";
 const Contact = () => {
 
   return (
-      <Section name="contact" extraClass="o-contact">
+      <Section name="contact">
           <div className="o-contact">
             <div className="o-contact_info">
                 <Subtitle color="blue">

@@ -3,7 +3,7 @@
 .o-newsletter_title {
     margin-bottom: 13px;
     color: $brown;
-    @media (min-width: $screen-sm) {
+    @media (min-width: $bp-main) {
         margin-bottom: -10px;
     }
 }

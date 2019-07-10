@@ -8,7 +8,7 @@ import NewsletterForm from "../../molecules/NewsletterForm/NewsletterForm";
 const Newsletter = () => (
 
     <Section name="newsletter" extraClass="o-newsletter">
-        <Title extraClass="o-newsletter_title">Newsletter</Title>
+        <Title level="2" extraClass="o-newsletter_title">Newsletter</Title>
         <NewsletterForm />
     </Section>
 )

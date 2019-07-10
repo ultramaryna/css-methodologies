@@ -4,7 +4,7 @@ import styles from "./styles.scss";
 const ScrollBtn = ({ target, type }) => {
 
   const handleClick = () => {
-    const content = document.querySelector(`.${target}`);
+    const content = document.querySelector(target);
     content.scrollIntoView({behavior: "smooth"});
   }
 

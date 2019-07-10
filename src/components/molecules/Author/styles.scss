@@ -12,6 +12,17 @@
       padding: 40px;
       background-color: $article__accent-color;
 
+      .m-author_content {
+        max-width: $post__width;
+        margin: 0 auto;
+        text-align: center;
+        @media (min-width: $bp-main) {
+          display: flex;
+          align-items: center;
+          text-align: left;
+        }
+      }
+
       .m-author_image {
         max-width: 240px;
         display: block;
@@ -37,19 +48,16 @@
 }
 
 .m-author_content {
-  max-width: $post__width;
-  margin: 0 auto;
-  text-align: center;
+  display: flex;
+  align-items: center;
   @media (min-width: $bp-main) {
-    display: flex;
-    align-items: center;
-    text-align: left;
+    flex-direction: column;
   }
 }
   
-.m-author_image {
+.m-author_image.a-img {
     align-self: center;
-    max-width: 164px;
+    max-width: 50%;
     margin-right: 17px;
     @media (min-width: $bp-main) {
       margin: 0 0 14px 0;
@@ -57,7 +65,7 @@
     }
 }
 
-.m-author_name {
+.m-author_name.a-subtitle.-lowercase {
   text-align: center;
   font-family: $font-headings;
   font-size: 22px;

@@ -18,7 +18,7 @@ const Hero = ({ target, type }) => (
         Czytaj
       </LinkBtn>
     </div>
-    <ScrollBtn target="" />
+    <ScrollBtn target="#featured-posts" />
   </Section>
 )
 
