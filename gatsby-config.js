@@ -5,6 +5,7 @@ module.exports = {
     author: `@ultramaryna`,
     logo: '/images/logo.svg'
   },
+  pathPrefix: `/~14_kwiecien/metodologie/atomic-design`,
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
