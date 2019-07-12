@@ -1,5 +1,4 @@
-import React from "react"
-import "./styles.scss";
+import React from "react";
 
 const Label = ({ input, children }) => (
   <label htmlFor={input} className="a-label">

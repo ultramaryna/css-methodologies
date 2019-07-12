@@ -1,5 +1,4 @@
 import React from "react";
-import "./styles.scss";
 
 import ListItem from "../../atoms/ListItem/ListItem";
 

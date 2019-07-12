@@ -1,7 +1,6 @@
 import React from "react";
 import moment from "moment";
 import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemPanel, AccordionItemButton } from 'react-accessible-accordion';
-import "./styles.scss";
 
 import Date from "../../atoms/Date/Date";
 import ListItem from "../../atoms/ListItem/ListItem";
@@ -32,8 +31,8 @@ const ShowDates = ({showName, data}) => {
           <ListItem key={item[0]} extraClass="m-showDates_monthItem">
             <h4 className="m-showDates_month">{item[0]}</h4>
             <ul className="m-showDates_list">
-              {item[1].map(date => (
-                <Date date={date} />
+              {item[1].map((date, index) => (
+                <Date date={date} key={index}/>
               ))}
             </ul>
           </ListItem>

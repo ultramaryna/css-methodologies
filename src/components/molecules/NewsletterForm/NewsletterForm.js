@@ -1,5 +1,4 @@
 import React from "react";
-import "./styles.scss";
 
 import Input from "../../atoms/Input/Input";
 import Label from "../../atoms/Label/Label";

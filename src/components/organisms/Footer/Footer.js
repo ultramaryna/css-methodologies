@@ -1,5 +1,4 @@
 import React from "react";
-import "./styles.scss";
 import Text from "../../atoms/Text/Text";
 
 const Footer = () => (

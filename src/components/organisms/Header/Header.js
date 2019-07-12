@@ -1,5 +1,4 @@
 import React from "react";
-import "./styles.scss";
 
 import Menu from "../../molecules/Menu/Menu";
 import Logo from "../../atoms/Logo/Logo";

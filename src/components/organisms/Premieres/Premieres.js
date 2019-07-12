@@ -1,6 +1,5 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import "./styles.scss";
 
 import Premiere from '../../molecules/Premiere/Premiere';
 import Section from '../../atoms/Section/Section';

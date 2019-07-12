@@ -1,6 +1,5 @@
 import React from 'react';
 import rehypeReact from "rehype-react";
-import "./styles.scss";
 
 import CustomLink from '../../atoms/CustomLink/CustomLink';
 import Subtitle from "../../atoms/Subtitle/Subtitle";

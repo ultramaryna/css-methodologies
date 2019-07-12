@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import "./styles.scss";
 
 const MenuItem = ({ link, title }) => (
   <li className="a-menuItem">

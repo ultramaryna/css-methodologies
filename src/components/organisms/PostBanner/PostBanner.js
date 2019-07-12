@@ -1,5 +1,4 @@
 import React from 'react';
-import "./styles.scss";
 
 import DecoratedImage from '../../atoms/DecoratedImage/DecoratedImage';
 import Title from "../../atoms/Title/Title";

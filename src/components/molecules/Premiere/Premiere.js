@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const Premiere = ({ imageDesktop, image, link, title }) => (
   <div className="m-premiere">

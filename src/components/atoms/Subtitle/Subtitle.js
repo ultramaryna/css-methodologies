@@ -1,5 +1,4 @@
 import React from "react"
-import "./styles.scss";
 
 const Subtitle = ({ level, isDecorative, isLowercase, children, color, extraClass }) => {
   const classes = `a-subtitle ${isLowercase ? '-lowercase' : ''} ${extraClass ? extraClass : ''}`;

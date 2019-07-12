@@ -5,7 +5,6 @@ import SEO from "../../atoms/Seo/seo";
 import Author from "../../molecules/Author/Author";
 import PostContent from "../../organisms/PostContent/PostContent";
 import PostBanner from "../../organisms/PostBanner/PostBanner";
-import "./styles.scss";
 
 export default class BlogPost extends React.Component {
 

@@ -1,5 +1,4 @@
-import React from "react"
-import "./styles.scss";
+import React from "react";
 
 import Image from '../../atoms/Image/Image';
 import Subtitle from '../../atoms/Subtitle/Subtitle';
@@ -24,7 +23,7 @@ const Post = ({ post, version }) => {
           <Text extraClass="m-post_text">{excerpt}</Text>
         }
         <LinkBtn
-          link={link}
+          link={post.fields.slug}
           variant={version === 'vertical' ? 'secondary' : 'primary'}
           extraClass="m-post_link"
         >

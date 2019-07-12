@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import "./styles.scss";
 
 const LinkBtn = ({ variant, children, link, extraClass }) => (
   <Link

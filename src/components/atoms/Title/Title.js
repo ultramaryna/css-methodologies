@@ -1,5 +1,4 @@
 import React from "react"
-import "./styles.scss";
 
 const Title = ({ variant, children, level, extraClass }) => {
   const classes = `a-title -${variant} ${extraClass ? extraClass : ''}`;

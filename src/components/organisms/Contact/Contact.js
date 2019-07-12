@@ -1,5 +1,4 @@
 import React from "react";
-import "./styles.scss";
 
 import Section from "../../atoms/Section/Section";
 import Subtitle from "../../atoms/Subtitle/Subtitle";

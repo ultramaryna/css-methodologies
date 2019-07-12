@@ -1,6 +1,5 @@
 import React from "react";
 import { StaticQuery } from "gatsby";
-import "./styles.scss";
 
 import Post from '../../molecules/Post/Post';
 import Section from '../../atoms/Section/Section';

@@ -1,5 +1,4 @@
 import React from "react"
-import "./styles.scss";
 
 class ScrollToTop extends React.Component {
   constructor() {

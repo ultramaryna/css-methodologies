@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "../../../_settings/global.scss";
 
 import Header from "../../organisms/Header/Header";
 import Footer from "../../organisms/Footer/Footer";

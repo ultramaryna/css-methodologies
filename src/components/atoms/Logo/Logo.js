@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, StaticQuery } from "gatsby";
-import "./styles.scss";
 
 const Logo = ({ src }) => {
     return (
