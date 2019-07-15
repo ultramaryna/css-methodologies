@@ -10,12 +10,16 @@ const Author = ({ author, isStandalone, type }) => {
     return (
         <div className={`m-author ${isStandalone ? '-standalone' : ''} ${typeClass}`}>
             <div className="m-author_content">
-                <Image src={author.image} alt={author.name} extraClass="m-author_image"/>
+                <Image
+                  src={isStandalone ? `../../${author.image}` : author.image}
+                  alt={author.name}
+                  extraClass="m-author_image"
+                />
                 <div>
                     <Subtitle level="3" extraClass="m-author_name" isLowercase color="none">
                         {author.name}
                     </Subtitle>
-                    {isStandalone && 
+                    {isStandalone &&
                         <Text extraClass="m-author_bio">
                             {author.bio}
                         </Text>
