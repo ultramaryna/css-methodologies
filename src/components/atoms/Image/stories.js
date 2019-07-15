@@ -1,4 +1,5 @@
 import React from 'react';
+import src from "../../../../static/images/posts/band.jpg";
 
 import { storiesOf } from '@storybook/react';
 import { themes } from '@storybook/theming';
@@ -12,4 +13,4 @@ export const image = {
 };
 
 storiesOf('Image', module)
-  .add('default', () => <Image src="../../_assets/images/logo.svg" alt="Logo" />);
+  .add('default', () => <Image src={src} alt="Logo" />);

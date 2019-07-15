@@ -12,4 +12,4 @@ storiesOf('Subtitle', module)
   .add('violet', () => <Subtitle color="violet">Subtitle</Subtitle>)
   .add('turquoise', () => <Subtitle color="turquoise">Subtitle</Subtitle>)
   .add('blue', () => <Subtitle color="blue">Subtitle</Subtitle>)
-  .add('lowercase', () => <Subtitle isLowercase>Subtitle</Subtitle>);
+  .add('lowercase', () => <Subtitle isLowercase color="none">Subtitle</Subtitle>);
