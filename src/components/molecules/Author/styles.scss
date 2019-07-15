@@ -17,6 +17,7 @@
         @media (min-width: $bp-main) {
           display: flex;
           align-items: center;
+          flex-direction: row;
           text-align: left;
         }
       }
