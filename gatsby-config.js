@@ -3,7 +3,7 @@ module.exports = {
     title: `Metodyki CSS - BEM`,
     description: `Analiza efektywności i użyteczności metodyk CSS - implementacja strony w BEM`,
     author: `@ultramaryna`,
-    logo: '/images/logo.svg'
+    logo: 'images/logo.svg'
   },
   pathPrefix: `/~14_kwiecien/metodologie/atomic-design`,
   plugins: [
