@@ -1,9 +1,6 @@
-@import '../../../_settings/var';
-@import '../../../_settings/mixins';
-
 .t-post {
     background-color: $grey-lightest;
-    
+
     .a-subtitle {
       font-size: 26px;
       line-height: 1.25;
@@ -13,7 +10,7 @@
         font-size: 38px;
       }
     }
-    
+
     .a-img {
       max-width: 100%;
       display: block;

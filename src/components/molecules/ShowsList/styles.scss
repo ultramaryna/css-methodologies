@@ -1,12 +1,10 @@
-@import '../../../_settings/var';
-
 .m-showsList {
     background-color: $lighter-grey;
     list-style-type: none;
     padding: 20px;
     max-height: 140px;
     overflow-y: auto;
-  
+
     @media (min-width: $bp-main) {
       order: 2;
       width: 35%;
@@ -16,15 +14,15 @@
       position: relative;
       top: -80px;
     }
-  
+
     &::-webkit-scrollbar {
       width: 22px;
     }
-  
+
     &::-webkit-scrollbar-track {
       background: $grey;
     }
-  
+
     &::-webkit-scrollbar-thumb {
       background: $teal-lighter;
     }
