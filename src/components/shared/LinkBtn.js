@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import vars from '../../styles/vars';
+import { Link } from "gatsby";
 
-const LinkBtn = styled.a`
+const LinkBtn = styled(Link)`
     display: inline-block;
     min-width: 130px;
     padding: 15px 9px 13px;
