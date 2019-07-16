@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Metodyki CSS - BEM`,
-    description: `Analiza efektywności i użyteczności metodyk CSS - implementacja strony w BEM`,
+    title: `Metodyki CSS - CSS in JS`,
+    description: `Analiza efektywności i użyteczności metodyk CSS - implementacja strony w CSS in JS (Styled Components)`,
     author: `@ultramaryna`,
   },
   plugins: [
@@ -26,8 +26,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Metodyki CSS - BEM`,
-        short_name: `Metodyki CSS - BEM`,
+        name: `Metodyki CSS - CSS in JS`,
+        short_name: `Metodyki CSS - CSS in JS`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
@@ -59,6 +59,12 @@ module.exports = {
         },
       ],
     },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
