@@ -1,13 +1,16 @@
 import { createGlobalStyle } from 'styled-components';
-import vars from "./vars";
+import { typo, colors } from "./vars";
+import reset from 'styled-reset'
 
 const GlobalStyle = createGlobalStyle`
+  ${reset}
+
   body {
-    font-family: ${vars.fontDefault};
+    font-family: ${typo.fontDefault};
     font-size: 1rem;
     font-weight: 400;
-    color: ${vars.textColor};
-    line-height: ${vars.lineHeight};
+    color: ${colors.textColor};
+    line-height: ${typo.lineHeight};
     box-sizing: border-box;
 }
 `;

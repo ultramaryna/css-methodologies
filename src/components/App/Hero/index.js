@@ -1,9 +1,8 @@
 import { Link } from "gatsby";
 import React from "react";
-import Section from "./Section";
-import Content from "./Content";
 import LinkBtn from "../../shared/LinkBtn";
-import ScrollBtn from "./ScrollBtn";
+import Title from "../../shared/Title";
+import { Content, Section, ScrollBtn, ReadBtn, HeroTitle } from './styles.js';
 
 const Hero = () => {
 
@@ -15,8 +14,8 @@ const Hero = () => {
   return (
     <Section>
         <Content>
-            <h1 className="heading--main hero__title">Nowa scena w Krakowie</h1>
-            <LinkBtn type="secondary">Czytaj</LinkBtn>
+            <HeroTitle>Nowa scena w Krakowie</HeroTitle>
+            <ReadBtn type="secondary">Czytaj</ReadBtn>
         </Content>
         <ScrollBtn type="button" className="icon-chevron" onClick={scrollToContent} />
     </Section>

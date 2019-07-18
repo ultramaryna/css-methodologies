@@ -1,4 +1,4 @@
-const vars = {
+export const colors = {
     black: '#000',
     grey: '#262A2C',
     lighterGrey: '#4A4A4A',
@@ -21,26 +21,39 @@ const vars = {
     pinkLighter: '#CFABD9',
     pink: '#D7A3EB',
     articleAccentColor:  '#58B8A8',
-    artistAccentColor:  '#905A9F',
+    artistAccentColor:  '#905A9F'
+}
+
+export const breakpoints = {
     screensm: '480px',
     screenmd: '768px',
     screenlg: '1200px',
-    bpmain:  '768px',
+    bpMain:  '768px'
+}
+
+export const sizes = {
     contentWidth: '1200px',
     postWidth: '800px',
+    marginMobile: '20px',
+    marginDesktop: '120px'
+}
+
+export const typo = {
     fontDecorative: `'Monoton', sans serif`,
     fontHeadings: `'Josefin Sans', sans serif`,
     fontText: `'Raleway', sans serif`,
     fontDefault:  `'Raleway', sans serif`,
     lineHeight: '1.5',
-    textColor:  '#262A2C',
-    marginMobile: '20px',
-    marginDesktop: '120px',
-    gradientViolet: 'linear-gradient(45deg, #2E3134, #CE54DC)',
-    gradientTeal: 'linear-gradient(45deg, #2E3134, #42DCC3)',
-    gradientMulticolor: 'linear-gradient(45deg, #6FF7E0 0%, #FC69EE 50%, #8519A3 100%)',
-    gradientBlack: 'rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 30%, rgba(0,0,0,0.99) 100%',
-    transition: '.2s easeinout'
+    textColor:  '#262A2C'
 }
 
-export default vars;
+export const gradients = {
+    violet: 'linear-gradient(45deg, #2E3134, #CE54DC)',
+    teal: 'linear-gradient(45deg, #2E3134, #42DCC3)',
+    multicolor: 'linear-gradient(45deg, #6FF7E0 0%, #FC69EE 50%, #8519A3 100%)',
+    black: 'rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 30%, rgba(0,0,0,0.99) 100%',
+}
+
+export const vars = {
+    transition: '.2s easeinout'
+}
