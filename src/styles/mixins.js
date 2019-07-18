@@ -27,7 +27,18 @@ const mixins = {
     @media (min-width: ${breakpoints.screenLg}) {
         padding: 0 ${sizes.marginDesktop};
     }
-    `
+    `,
+    underline: function(color, height, desktopHeight) {
+        return (
+            `background-image: linear-gradient(to right, ${color}, ${color});
+            background-repeat: repeat-x;
+            background-position: 0 125%;
+            background-size: 100% ${height};
+            @media (min-width: ${breakpoints.bpMain}) {
+                background-size: 100% ${desktopHeight};
+            }`
+        );
+    }
 }
 
 export default mixins;
