@@ -2,6 +2,7 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 
 import PostBlock from '../PostBlock/index';
+import Section from '../../shared/Section';
 import { StyledPosts } from './styles';
 
 const Posts = ({version, isFeatured}) => {
@@ -44,9 +45,11 @@ const Posts = ({version, isFeatured}) => {
         }
       `}
       render={data => (
+        <Section color="grey">
           <StyledPosts isHorizontal={version === 'horizontal'}>
             {getPosts(data)}
           </StyledPosts>
+        </Section>          
       )}
     />
   )
