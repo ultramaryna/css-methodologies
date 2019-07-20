@@ -1,12 +1,12 @@
 import React from "react";
 import styled from 'styled-components';
 import { breakpoints, colors } from '../../styles/vars';
-import mixins from '../../styles/mixins';
+import Wrapper from './Wrapper';
 
 const StyledSection = styled.section`
     padding: 40px 0;
     position: relative;
-    background-color: ${props => props.color ? colors[props.color] : colors.grey};
+    background-color: ${props => props.color ? props.color : colors.grey};
     color: ${colors.white};
     @media (min-width: ${breakpoints.screenlg}) {
         padding: 80px 0;
@@ -20,16 +20,31 @@ const NewsletterSection = styled(StyledSection)`
     }
 `;
 
-const SectionContent = styled.div`
-    ${mixins.wrapper}
+const BannerSection = styled(StyledSection)`
+    display: flex;
+    align-items: flex-end;
+    height: 200px;
+    background-image: url(images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    @media (min-width: ${breakpoints.bpMain}) {
+        height: 360px;
+    }
+
+    ${Wrapper} {
+        margin: 0;
+    }
 `;
 
-const Section = ({ children, isNewsletter }) => (
-    <StyledSection as={isNewsletter ? NewsletterSection : ''}>
-        <SectionContent>
-            {children}
-        </SectionContent>
-    </StyledSection>
-);
+const Section = ({ children, color, type }) => {
+    const background = colors[color];
+    return (
+        <StyledSection color={background} as={type === 'banner' ? BannerSection : ''}>
+            <Wrapper>
+                {children}
+            </Wrapper>
+        </StyledSection>
+    );
+};
 
 export default Section;

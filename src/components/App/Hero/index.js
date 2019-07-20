@@ -1,7 +1,4 @@
-import { Link } from "gatsby";
 import React from "react";
-import LinkBtn from "../../shared/LinkBtn";
-import Title from "../../shared/Title";
 import { Content, Section, ScrollBtn, ReadBtn, HeroTitle } from './styles.js';
 
 const Hero = () => {

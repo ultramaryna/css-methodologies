@@ -2,6 +2,8 @@ import React from "react"
 import Hero from "../components/App/Hero/index";
 import Posts from "../components/App/Posts/index";
 import Premieres from '../components/App/Premieres/index';
+import Banner from '../components/App/Banner/index';
+import SectionText from '../components/App/SectionText/index';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -14,6 +16,8 @@ const IndexPage = ({ location }) => (
     <Posts isFeatured />
     <Premieres />
     <Posts version="horizontal" />
+    <Banner title="O musicalu" />
+    <SectionText />
   </Layout>
 )
 
