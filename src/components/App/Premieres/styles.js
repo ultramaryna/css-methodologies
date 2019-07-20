@@ -4,12 +4,6 @@ import mixins from '../../../styles/mixins';
 
 export const PremieresWrapper = styled.div`
     color: ${colors.white};
-    &:hover {
-        ${PremieresTitle} {
-            opacity: 0;
-            display: none;
-        }
-    }
 `;
 
 export const PremieresList = styled.ul`
@@ -40,6 +34,10 @@ export const PremieresTitle = styled.h2`
     transition: ${vars.transition};
     z-index: 2;
     ${mixins.gradientText}
+    ${PremieresWrapper}:hover & {
+        opacity: 0;
+        display: none;
+    }
     @media (min-width: ${breakpoints.bpMain}) {
         width: 100%;
         left: 0;

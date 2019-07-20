@@ -6,11 +6,6 @@ export const StyledPremiere = styled.li`
     margin-bottom: 20px;
     align-self: center;
     text-align: center;
-    &:hover {
-        ${Title} {
-            opacity: 1;
-        }
-    }
     @media (min-width: ${breakpoints.bpMain}) {
         width: calc((100% - 80px) / 5);
     }
@@ -24,6 +19,7 @@ export const Picture = styled.picture`
     display: inline-block;
     z-index: 1;
     overflow: hidden;
+    transition: ${vars.transition};
     &:after {
         content: '';
         position: absolute;
@@ -39,15 +35,15 @@ export const Picture = styled.picture`
         &:after {
             opacity: .7;
         }
-        ${Img} {
-            transform: scale(1.2);
-        }
     }
 `;
 
 export const Img = styled.img`
     max-width: 100%;
     transition: ${vars.transition};
+    ${Picture}:hover & {
+        transform: scale(1.2);
+    }
 `;
 
 export const Title = styled.h3`
@@ -62,11 +58,12 @@ export const Title = styled.h3`
     text-transform: uppercase;
     white-space: nowrap;
     transition: ${vars.transition};
-    &:hover {
-        & + ${Picture} {
-            &:after {
-                opacity: .7;
-            }
+    ${StyledPremiere}:hover & {
+        opacity: 1;
+    }
+    &:hover + ${Picture} {
+        &:after {
+            opacity: .7;
         }
     }
     @media (min-width: ${breakpoints.bpMain}) {
