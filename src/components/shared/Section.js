@@ -39,7 +39,10 @@ const BannerSection = styled(StyledSection)`
 const Section = ({ children, color, type }) => {
     const background = colors[color];
     return (
-        <StyledSection color={background} as={type === 'banner' ? BannerSection : ''}>
+        <StyledSection 
+            color={background} 
+            as={type === 'banner' ? BannerSection : type === 'newsletter' ? NewsletterSection : ''}
+        >
             <Wrapper>
                 {children}
             </Wrapper>
