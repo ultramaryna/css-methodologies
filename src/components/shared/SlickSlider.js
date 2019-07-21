@@ -1,10 +1,11 @@
+import React from "react";
 import styled from 'styled-components';
 import { breakpoints, colors } from '../../styles/vars';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const SlickSlider = styled(Slider)`
+const StyledSlider = styled(Slider)`
     .slick-next, .slick-prev {
         width: 46px;
         height: 46px;
@@ -79,5 +80,23 @@ const SlickSlider = styled(Slider)`
         }
     }
 `;
+
+const SlickSlider = ({children, customSettings}) => {
+    const defaultSettings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      };
+    
+      const settings = {...defaultSettings, ...customSettings};
+    
+      return (
+        <StyledSlider {...settings}>
+          {children}
+        </StyledSlider>
+      )
+};
 
 export default SlickSlider;

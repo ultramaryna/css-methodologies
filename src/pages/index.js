@@ -7,6 +7,7 @@ import SectionText from '../components/App/SectionText/index';
 import Newsletter from '../components/App/Newsletter/index';
 import Contact from '../components/App/Contact/index';
 import Artists from '../components/App/Artists/index';
+import Authors from '../components/App/Authors/index';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -23,6 +24,7 @@ const IndexPage = ({ location }) => (
     <Banner title="O musicalu" />
     <SectionText />
     <Newsletter />
+    <Authors />
     <Contact />
   </Layout>
 )
