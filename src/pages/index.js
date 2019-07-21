@@ -5,6 +5,7 @@ import Premieres from '../components/App/Premieres/index';
 import Banner from '../components/App/Banner/index';
 import SectionText from '../components/App/SectionText/index';
 import Newsletter from '../components/App/Newsletter/index';
+import Contact from '../components/App/Contact/index';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -20,6 +21,7 @@ const IndexPage = ({ location }) => (
     <Banner title="O musicalu" />
     <SectionText />
     <Newsletter />
+    <Contact />
   </Layout>
 )
 
