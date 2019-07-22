@@ -18,8 +18,8 @@ const SectionText = () => {
       render={data => (
           <Section color="turquoise">
             <div>
-                <Subtitle color="turquoise">
-                    {data.descriptionJson.title}
+                <Subtitle color="turquoiseLighter">
+                    <span>{data.descriptionJson.title}</span>
                 </Subtitle>
                 <p dangerouslySetInnerHTML={{ __html: data.descriptionJson.text }} />
             </div>

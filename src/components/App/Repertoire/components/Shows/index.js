@@ -62,7 +62,7 @@ const Shows = ({showName, data}) => {
 
   return (
     <div>
-      <Title>
+      <Title color="tealLighter">
         <span>{show.name}</span>
       </Title>
       <Theatres>

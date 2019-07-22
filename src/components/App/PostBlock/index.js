@@ -16,7 +16,7 @@ const PostBlock = ({post, version}) => {
           alt={post.frontmatter.title}
         />
         <Content>
-          <Title isLowercase={version === 'vertical'}>
+          <Title isLowercase={!isHorizontal} color={isHorizontal ? 'greyLighter' : 'none'}>
               <span>{post.frontmatter.title}</span>
           </Title>
           {isHorizontal && post.excerpt &&

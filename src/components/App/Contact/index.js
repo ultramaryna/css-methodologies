@@ -12,8 +12,10 @@ const Contact = () => {
       <Section color="blue">
           <Container>
                 <Info>
-                    <Subtitle>
-                        Kontakt
+                    <Subtitle color="blueLighter">
+                        <span>
+                            Kontakt
+                        </span>
                     </Subtitle>
                     <Text>
                         Lorem ipsum

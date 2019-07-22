@@ -7,7 +7,7 @@ const Artist = ({artist}) => (
     <Item key={artist.frontmatter.title}>
         <DecoratedImage src={artist.frontmatter.mainImage} alt={artist.frontmatter.title} />
         <Content>
-            <Title>
+            <Title color="purpleLighter">
                 <span>{artist.frontmatter.title}</span>
             </Title>
             <Bio>{artist.excerpt}</Bio>
