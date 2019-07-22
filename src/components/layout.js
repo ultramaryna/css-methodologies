@@ -4,6 +4,7 @@ import GlobalStyle from "../styles/global";
 
 import Header from './App/Header/index';
 import Footer from './App/Footer/index';
+import ScrollToTop from './App/ScrollToTop/index';
 
 const Layout = ({ children }) => {
 
@@ -15,6 +16,7 @@ const Layout = ({ children }) => {
         {children}
       </main>
       <Footer />
+      <ScrollToTop />
     </React.Fragment>
   )
 }
