@@ -14,7 +14,7 @@ const StyledSlider = styled(Slider)`
             top: 37%;
         }
         &:before {
-            content: '\E800';
+            content: '\\E800';
             font-family: 'fontello';
             font-size: 28px;
             opacity: 1;
@@ -81,7 +81,34 @@ const StyledSlider = styled(Slider)`
     }
 `;
 
-const SlickSlider = ({children, customSettings}) => {
+const AuthorsSlider = styled(StyledSlider)`
+    .slick-next, .slick-prev {
+    top: 37%;
+    &:before {
+      @media (min-width: $bp-main) {
+        font-size: 34px;
+      }
+    }
+  }
+
+  .slick-next {
+    right: -65px;
+    transform: rotate(-90deg) translateY(-50%);
+        @media (min-width: ${breakpoints.bpMain}) {
+            right: -70px;
+        }
+    }
+
+    .slick-prev {
+        left: -65px;
+        transform: rotate(90deg) translateY(-50%);
+        @media (min-width: ${breakpoints.bpMain}) {
+            left: -70px;
+        }
+    }
+`;
+
+const SlickSlider = ({children, customSettings, isAuthors}) => {
     const defaultSettings = {
         dots: true,
         infinite: true,
@@ -93,7 +120,7 @@ const SlickSlider = ({children, customSettings}) => {
       const settings = {...defaultSettings, ...customSettings};
     
       return (
-        <StyledSlider {...settings}>
+        <StyledSlider {...settings} as={isAuthors ? AuthorsSlider : ''}>
           {children}
         </StyledSlider>
       )

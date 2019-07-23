@@ -29,7 +29,7 @@ export const TheatreExpand = styled(AccordionItemButton)`
     position: relative;
     padding-right: 30px;
     &:after {
-        content: '\E800';
+        content: '\\E800';
         font-family: 'fontello';
         position: absolute;
         right: 0;

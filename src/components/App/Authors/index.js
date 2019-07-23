@@ -60,7 +60,7 @@ const Authors = () => {
                     <Title>
                         <span>Twórcy</span>
                     </Title>
-                    <SlickSlider customSettings={slickSettings}>
+                    <SlickSlider customSettings={slickSettings} isAuthors={true}>
                         {renderAuthors(data)}
                     </SlickSlider>
                 </Container>
