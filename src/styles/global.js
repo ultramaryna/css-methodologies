@@ -14,6 +14,10 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  strong {
+    font-weight: 900;
+  }
+
   .title {
     font-family: ${typo.fontDecorative};
     font-weight: 400;

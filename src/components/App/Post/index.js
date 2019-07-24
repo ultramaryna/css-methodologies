@@ -1,12 +1,11 @@
 import React from 'react';
-import rehypeReact from "rehype-react";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import Layout from '../../layout';
 import SEO from '../../seo';
-import Subtitle from '../../shared/Subtitle';
-import Image from '../../shared/Image';
-import CustomLink from '../../shared/CustomLink';
+import { Container } from './styles';
+
 import Banner from './components/Banner/index';
+import Content from './components/Content/index';
 
 export default class BlogPost extends React.Component {
 
@@ -15,22 +14,13 @@ export default class BlogPost extends React.Component {
     const { title, date, mainImage, type } = post.frontmatter;
     const { location } = this.props;
 
-    const renderAst = new rehypeReact({
-      createElement: React.createElement,
-      components: {
-        "custom-link": CustomLink,
-        "subheading": Subtitle,
-        "custom-image": Image
-      },
-    }).Compiler
-
     return (
       <Layout location={this.props.location}>
         <SEO title={title} description={post.excerpt}/>
-        <article className="post">
+        <Container>
           <Banner type={type} image={mainImage} title={title} />
-          {renderAst(post.htmlAst)}
-        </article>
+          <Content content={post.htmlAst} type={type} />
+        </Container>
       </Layout>
     )
   }

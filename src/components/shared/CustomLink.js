@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import { typo, colors } from '../../styles/vars';
 import mixins from '../../styles/mixins';
 
-export const CustomLink = styled(Link)`
+const CustomLink = styled(Link)`
     color: ${typo.fontText};
     position: relative;
     text-decoration: none;
@@ -17,3 +17,5 @@ export const CustomLink = styled(Link)`
 CustomLink.defaultProps = {
     color: 'tealLighter'
 }
+
+export default CustomLink;
