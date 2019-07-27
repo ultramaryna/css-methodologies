@@ -46,7 +46,7 @@ const Posts = ({version, isFeatured}) => {
       `}
       render={data => (
         <Section color="grey">
-          <StyledPosts isHorizontal={version === 'horizontal'}>
+          <StyledPosts isHorizontal={version === 'horizontal'} id={isFeatured ? 'featured-posts' : 'posts'}>
             {getPosts(data)}
           </StyledPosts>
         </Section>          

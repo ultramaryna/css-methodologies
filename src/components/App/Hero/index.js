@@ -4,7 +4,7 @@ import { Content, Section, ScrollBtn, ReadBtn, HeroTitle } from './styles.js';
 const Hero = () => {
 
   const scrollToContent = () => {
-    const content = document.querySelector(".section--featured-posts");
+    const content = document.querySelector("#featured-posts");
     content.scrollIntoView({behavior: "smooth"});
   }
 
