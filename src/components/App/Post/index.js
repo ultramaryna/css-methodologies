@@ -6,11 +6,14 @@ import { Container } from './styles';
 
 import Banner from './components/Banner/index';
 import Content from './components/Content/index';
+import Author from '../Author/index';
+import Section from '../../shared/Section';
+import Wrapper from '../../shared/Wrapper';
 
 export default class BlogPost extends React.Component {
 
   render() {
-    const { data: { markdownRemark: post } } = this.props;
+    const { data: { markdownRemark: post, authorsJson: author } } = this.props;
     const { title, date, mainImage, type } = post.frontmatter;
     const { location } = this.props;
 
@@ -20,6 +23,9 @@ export default class BlogPost extends React.Component {
         <Container>
           <Banner type={type} image={mainImage} title={title} />
           <Content content={post.htmlAst} type={type} />
+          <Section color={type === 'article' ? 'teal' : 'greyLight'}>
+            <Author author={author} isStandalone />
+          </Section>
         </Container>
       </Layout>
     )
@@ -27,7 +33,7 @@ export default class BlogPost extends React.Component {
 }
 
 export const query = graphql`
-query PostQuery($slug: String!) {
+query PostQuery($slug: String!, $author: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
         htmlAst
         excerpt
@@ -35,7 +41,14 @@ query PostQuery($slug: String!) {
             title
             date(formatString: "DD.MM.YYYY"),
             type,
-            mainImage
+            mainImage,
+            author
         }
+    }
+    authorsJson (name: { eq: $author }) {
+      name,
+      bio,
+      image,
+      id
     }
 }`

@@ -19,6 +19,7 @@ exports.createPages = ({ actions, graphql }) => {
               }
             frontmatter {
               title
+              author
             }
           }
         }
@@ -38,6 +39,7 @@ exports.createPages = ({ actions, graphql }) => {
             component: blogTemplate,
             context: {
               slug: node.fields.slug,
+              author: node.frontmatter.author
             }, // additional data can be passed via context
           })
         })

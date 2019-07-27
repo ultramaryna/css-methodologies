@@ -2,7 +2,7 @@
 title: 'Dear Evan Hansen'
 date: 2019-02-20T21:09:00.000+02:00
 type: article
-authorId: Jane Doe
+author: Jane Doe
 mainImage: ./images/posts/band.jpg
 featured: false
 ---

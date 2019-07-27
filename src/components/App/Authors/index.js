@@ -4,7 +4,7 @@ import { Container, Title } from './styles';
 
 import SlickSlider from '../../shared/SlickSlider';
 import Section from '../../shared/Section';
-import Author from "./components/Author/index";
+import Author from "../Author/index";
 
 const Authors = () => {
   const slickSettings = {
