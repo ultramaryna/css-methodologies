@@ -4,6 +4,7 @@ module.exports = {
     description: `Analiza efektywności i użyteczności metodyk CSS - implementacja strony w CSS in JS (Styled Components)`,
     author: `@ultramaryna`,
   },
+  pathPrefix: `/~14_kwiecien/metodologie/css-in-js`,
   plugins: [
     `gatsby-plugin-react-helmet`,
     {

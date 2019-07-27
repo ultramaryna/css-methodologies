@@ -8,7 +8,7 @@ export const Section = styled.section`
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-image: url(../images/hero.jpg);
+    background-image: url(images/hero.jpg);
     background-size: cover;
     background-position: center;
     z-index: 1;
