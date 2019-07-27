@@ -10,7 +10,9 @@ const Author = ({ author, isStandalone }) => (
             />
             <div>
                 <Name>{author.name}</Name>
-                <p>{author.bio}</p>
+                {isStandalone &&
+                    <p>{author.bio}</p>
+                }
             </div>
         </Content>
     </Item>

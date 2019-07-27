@@ -20,9 +20,9 @@ export default class BlogPost extends React.Component {
     return (
       <Layout location={this.props.location}>
         <SEO title={title} description={post.excerpt}/>
+        <Banner type={type} image={mainImage} title={title} />
         <Container>
-          <Banner type={type} image={mainImage} title={title} />
-          <Content content={post.htmlAst} type={type} />
+          <Content content={post.htmlAst} postType={type} />
           <Section color={type === 'article' ? 'teal' : 'greyLight'}>
             <Author author={author} isStandalone />
           </Section>

@@ -23,13 +23,25 @@ export const PostContent = styled.div`
             margin-top: 62px;
             font-size: 38px;
         }
-
-        span {
-            background-image: linear-gradient(to right, ${colors.tealLighter}, ${colors.tealLighter});
-        }
     }
 
     p {
       margin-bottom: 20px;
     }
+`;
+
+export const ArtistPostContent = styled(PostContent)`
+  ${Subtitle} {
+    span {
+      background-image: linear-gradient(to right, ${colors.pinkLighter}, ${colors.pinkLighter});
+    }
+  }
+`;
+
+export const ArticlePostContent = styled(PostContent)`
+  ${Subtitle} {
+    span {
+      background-image: linear-gradient(to right, ${colors.tealLighter}, ${colors.tealLighter});
+    }
+  }
 `;

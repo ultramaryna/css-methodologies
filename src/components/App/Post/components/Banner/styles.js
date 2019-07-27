@@ -5,6 +5,7 @@ import mixins from '../../../../../styles/mixins';
 
 export const Container = styled.div`
     height: 600px;
+    min-width: 100%;
     background-size: cover;
     background-position: center;
 `;

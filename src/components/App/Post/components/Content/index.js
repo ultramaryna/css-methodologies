@@ -4,7 +4,7 @@ import rehypeReact from "rehype-react";
 import Subtitle from '../../../../shared/Subtitle';
 import Image from '../../../../shared/Image';
 import CustomLink from '../../../../shared/CustomLink';
-import { PostContent } from './styles';
+import { PostContent, ArtistPostContent, ArticlePostContent } from './styles';
 
 const Content = ({ content, postType }) => {
     const renderAst = new rehypeReact({
@@ -16,8 +16,10 @@ const Content = ({ content, postType }) => {
         },
     }).Compiler
 
+    console.log(postType);
+
     return (
-        <PostContent>
+        <PostContent as={postType === 'artist' ? ArtistPostContent : ArticlePostContent}>
             {renderAst(content)}
         </PostContent>
     )
