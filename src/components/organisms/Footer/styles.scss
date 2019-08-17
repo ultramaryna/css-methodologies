@@ -1,13 +1,18 @@
 .o-footer {
-    @include wrapper();
     background-color: $grey;
     color: $white;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px;
     @media (min-width: $bp-main) {
-        display: flex;
         padding-top: 67px;
         padding-bottom: 50px;
+    }
+}
+
+.o-footer_content {
+    @include wrapper();
+    @media (min-width: $bp-main) {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
@@ -30,5 +35,24 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+
+.o-footer_links {
+    flex: 1 1 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.o-footer_link {
+    color: $white;
+    font-family: $font-headings;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+
+    &:hover {
+        background-image: $gradient-multicolor;
+        @include gradient-text();
     }
 }
