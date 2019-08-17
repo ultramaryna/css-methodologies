@@ -1,6 +1,6 @@
 import React from "react";
-import { StyledBanner, Title } from './styles';
-import Section, { BannerSection } from '../../shared/Section';
+import { Title } from './styles';
+import Section from '../../shared/Section';
 
 const Banner = ({ title }) => (
     <Section type="banner">

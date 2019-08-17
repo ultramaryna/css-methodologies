@@ -1,7 +1,6 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import { Container, Title } from './styles';
-import { breakpoints } from '../../../styles/vars';
 
 import SlickSlider from '../../shared/SlickSlider';
 import Section from '../../shared/Section';
@@ -36,10 +35,10 @@ const Authors = () => {
     const { allAuthorsJson: { edges: authors } } = data;
 
     return (
-      authors.map((item) => {
+      authors.map((item, index) => {
         const {node: author} = item;
         return (
-          <Author author={author} />
+          <Author author={author} key={index} />
         )
       })
     )

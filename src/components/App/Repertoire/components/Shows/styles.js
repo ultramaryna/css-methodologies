@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { breakpoints, typo, colors } from '../../../../../styles/vars';
 import Subtitle from '../../../../shared/Subtitle';
-import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemPanel, AccordionItemButton } from 'react-accessible-accordion';
+import { Accordion, AccordionItemHeading, AccordionItemButton } from 'react-accessible-accordion';
 
 export const Title = styled(Subtitle)`
     @media (min-width: ${breakpoints.bpMain}) {

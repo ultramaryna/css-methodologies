@@ -12,9 +12,9 @@ const Artists = () => {
         const { allMarkdownRemark: { nodes: artists } } = data;
 
         return (
-            artists.map((artist) => {
+            artists.map((artist, index) => {
                 return (
-                    <Artist artist={artist} />
+                    <Artist artist={artist} key={index} />
                 )
             })
         )

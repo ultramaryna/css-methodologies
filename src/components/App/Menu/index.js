@@ -1,4 +1,3 @@
-import { Link } from "gatsby";
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import { StyledMenu, MenuLink, MenuList, MenuItem } from './styles';

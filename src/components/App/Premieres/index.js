@@ -9,9 +9,9 @@ const Premieres = () => {
     const { allPremieresJson: { edges: premieres } } = data;
 
     return (
-      premieres.map(premiere => {
+      premieres.map((premiere, index) => {
         return (
-          <Premiere premiere={premiere} />
+          <Premiere premiere={premiere} key={index} />
         );
       })
     )

@@ -8,14 +8,12 @@ import Banner from './components/Banner/index';
 import Content from './components/Content/index';
 import Author from '../Author/index';
 import Section from '../../shared/Section';
-import Wrapper from '../../shared/Wrapper';
 
 export default class BlogPost extends React.Component {
 
   render() {
     const { data: { markdownRemark: post, authorsJson: author } } = this.props;
-    const { title, date, mainImage, type } = post.frontmatter;
-    const { location } = this.props;
+    const { title, mainImage, type } = post.frontmatter;
 
     return (
       <Layout location={this.props.location}>
