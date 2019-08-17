@@ -14,7 +14,7 @@ const Hero = () => {
             <HeroTitle>Nowa scena w Krakowie</HeroTitle>
             <ReadBtn to="/articles/lorem-ipsum-dolor" type="secondary">Czytaj</ReadBtn>
         </Content>
-        <ScrollBtn type="button" className="icon-chevron" onClick={scrollToContent} />
+        <ScrollBtn type="button" className="icon-chevron" onClick={scrollToContent} title="Scroll" />
     </Section>
   );
 }
