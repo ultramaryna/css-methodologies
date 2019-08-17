@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { breakpoints, typo, colors } from '../../../styles/vars';
 
 export const Container = styled.div`
-     @media (min-width: ${breakpoints.bpMain}) {
+     @media (min-width: ${breakpoints.screenmdd}) {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -10,7 +10,7 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h2`
-    @media (min-width: ${breakpoints.bpMain}) {
+    @media (min-width: ${breakpoints.screenmdd}) {
         flex: 1 1 100%;
         z-index: 2;
     }
@@ -27,7 +27,7 @@ export const Select = styled.ul`
     max-height: 140px;
     overflow-y: auto;
 
-    @media (min-width: ${breakpoints.bpMain}) {
+    @media (min-width: ${breakpoints.screenmdd}) {
         order: 2;
         width: 35%;
         max-width: 440px;
@@ -68,7 +68,7 @@ export const SelectItem = styled.li`
 
 export const ShowsWrapper = styled.div`
     margin-top: 50px;
-    @media (min-width: ${breakpoints.bpMain}) {
+    @media (min-width: ${breakpoints.screenmdd}) {
         margin: 10px 20px 0 0;
         width: calc(60% - 20px);
     }
@@ -83,7 +83,7 @@ export const ChooseIcon = styled.i`
     margin-left: 5px;
     &:before {
         transform: rotate(180deg);
-        @media (min-width: ${breakpoints.bpMain}) {
+        @media (min-width: ${breakpoints.screenmdd}) {
             transform: rotate(-90deg);
         }
     }

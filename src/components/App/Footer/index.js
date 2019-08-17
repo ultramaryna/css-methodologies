@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledFooter, Text, Version, Content } from './styles';
+import { StyledFooter, Text, Version, Content, Links, Link } from './styles';
 
 const Footer = () => (
     <StyledFooter>
@@ -12,6 +12,10 @@ const Footer = () => (
                 Wersja CSS in JS<br/>
                 Styled Components
             </Version>
+            <Links>
+                <Link href="http://leszczyna.wzks.uj.edu.pl/~14_kwiecien/metodologie/bem">BEM</Link>
+                <Link href="http://leszczyna.wzks.uj.edu.pl/~14_kwiecien/metodologie/atomic-design">Atomic Design</Link>
+            </Links>
         </Content>
     </StyledFooter>
 )

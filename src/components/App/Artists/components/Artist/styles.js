@@ -4,7 +4,7 @@ import Subtitle from '../../../../shared/Subtitle';
 
 export const Item = styled.div`
     text-align: center;
-    @media (min-width: ${breakpoints.bpMain}) {
+    @media (min-width: ${breakpoints.screenmdd}) {
         display: flex !important;
         align-items: center;
         text-align: left;
@@ -25,7 +25,7 @@ export const Bio = styled.p`
 `;
 
 export const Content = styled.div`
-    @media (min-width: ${breakpoints.bpMain}) {
+    @media (min-width: ${breakpoints.screenmdd}) {
         margin-left: 60px;
     }
 `;

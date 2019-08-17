@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { breakpoints, colors, typo } from '../../../styles/vars';
+import { breakpoints, colors, typo, gradients } from '../../../styles/vars';
 import mixins from '../../../styles/mixins';
 import Wrapper from '../../shared/Wrapper';
 
@@ -17,6 +17,7 @@ export const StyledFooter = styled.footer`
 export const Content = styled(Wrapper)`
     @media (min-width: ${breakpoints.bpMain}) {
         display: flex;
+        flex-wrap: wrap;
     }
 `;
 
@@ -39,5 +40,24 @@ export const Version = styled.p`
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+`;
+
+export const Links = styled.div`
+    flex: 1 1 100%;
+    margin-top: 50px;
+    text-align: center;
+`;
+
+export const Link = styled.a`
+    color: ${colors.white};
+    font-family: ${typo.fontHeadings};
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+
+    &:hover {
+        background-image: ${gradients.multicolor};
+        ${mixins.gradientText}
     }
 `;

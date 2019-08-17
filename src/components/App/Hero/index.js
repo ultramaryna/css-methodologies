@@ -12,7 +12,7 @@ const Hero = () => {
     <Section>
         <Content>
             <HeroTitle>Nowa scena w Krakowie</HeroTitle>
-            <ReadBtn type="secondary">Czytaj</ReadBtn>
+            <ReadBtn to="/articles/lorem-ipsum-dolor" type="secondary">Czytaj</ReadBtn>
         </Content>
         <ScrollBtn type="button" className="icon-chevron" onClick={scrollToContent} />
     </Section>

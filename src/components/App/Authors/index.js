@@ -1,6 +1,7 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import { Container, Title } from './styles';
+import { breakpoints } from '../../../styles/vars';
 
 import SlickSlider from '../../shared/SlickSlider';
 import Section from '../../shared/Section';
@@ -14,6 +15,13 @@ const Authors = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
+      {
+        breakpoint: 890,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
       {
         breakpoint: 768,
         settings: {
