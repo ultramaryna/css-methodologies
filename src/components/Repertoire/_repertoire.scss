@@ -1,7 +1,7 @@
 @import './components/Shows/shows';
 
 .repertoire {
-  @media (min-width: $bp-main) {
+  @media (min-width: $screen-mdd) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -9,7 +9,7 @@
 }
 
 .repertoire__heading {
-  @media (min-width: $bp-main) {
+  @media (min-width: $screen-mdd) {
     flex: 1 1 100%;
     z-index: 2;
   }
@@ -27,7 +27,7 @@
   max-height: 140px;
   overflow-y: auto;
 
-  @media (min-width: $bp-main) {
+  @media (min-width: $screen-mdd) {
     order: 2;
     width: 35%;
     max-width: 440px;
@@ -68,7 +68,7 @@
 
 .repertoire__shows-wrapper {
   margin-top: 50px;
-  @media (min-width: $bp-main) {
+  @media (min-width: $screen-mdd) {
     margin: 10px 20px 0 0;
     width: calc(60% - 20px);
   }
@@ -83,7 +83,7 @@
   margin-left: 5px;
   &:before {
     transform: rotate(180deg);
-    @media (min-width: $bp-main) {
+    @media (min-width: $screen-mdd) {
       transform: rotate(-90deg);
     }
   }

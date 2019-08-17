@@ -9,7 +9,7 @@
 
 .artists__item {
     text-align: center;
-    @media (min-width: $bp-main) {
+    @media (min-width: $screen-mdd) {
         display: flex !important;
         align-items: center;
         text-align: left;
@@ -30,7 +30,7 @@
 }
 
 .artists__content {
-    @media (min-width: $bp-main) {
+    @media (min-width: $screen-mdd) {
         margin-left: 60px;
     }
 }
