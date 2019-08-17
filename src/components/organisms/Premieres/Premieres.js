@@ -18,6 +18,7 @@ const Premieres = ({ premieres }) => {
               image={premiere.node.images.mobile}
               imageDesktop={premiere.node.images.desktop}
               link={premiere.node.link}
+              key={premiere.node.title}
             />
         );
       })

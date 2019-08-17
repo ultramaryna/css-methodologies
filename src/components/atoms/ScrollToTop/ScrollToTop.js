@@ -25,7 +25,11 @@ class ScrollToTop extends React.Component {
 
   render() {
     return (
-      <button className="a-scrollTop" type="button" onClick={() => this.scrollToTop()}>
+      <button 
+        className="a-scrollTop" 
+        type="button" onClick={() => this.scrollToTop()} 
+        title="Scroll to top"
+      >
         <i className="icon-chevron" />
       </button>
     );

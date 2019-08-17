@@ -11,6 +11,7 @@ const ScrollBtn = ({ target, type }) => {
     <button
       className={`a-scrollBtn -${type} icon-chevron`}
       onClick={handleClick}
+      title="Scroll"
     />
   )
 }

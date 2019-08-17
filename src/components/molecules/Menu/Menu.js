@@ -8,7 +8,11 @@ const Menu = ({ isOpen }) => {
     return (
       data.allMenuJson.edges.map(item => {
         return (
-          <MenuItem title={item.node.title} link={item.node.link} />
+          <MenuItem 
+            title={item.node.title} 
+            link={item.node.link} 
+            key={item.node.title}
+          />
         )
       })
     );

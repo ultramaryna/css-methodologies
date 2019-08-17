@@ -6,7 +6,7 @@ import Text from '../../atoms/Text/Text';
 import LinkBtn from '../../atoms/LinkBtn/LinkBtn';
 
 const Post = ({ post, version }) => {
-  const { frontmatter: { title, mainImage, link }, excerpt } = post;
+  const { frontmatter: { title, mainImage }, excerpt } = post;
 
   return (
     <article className={`m-post -${version}`}>

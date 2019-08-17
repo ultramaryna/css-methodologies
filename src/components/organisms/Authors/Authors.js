@@ -15,6 +15,13 @@ const Authors = () => {
     slidesToScroll: 1,
     responsive: [
       {
+        breakpoint: 890,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,

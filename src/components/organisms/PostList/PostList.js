@@ -48,9 +48,9 @@ const PostList = ({ posts, type, isFeatured, extraClass }) => {
       `}
       render={data => (
         <Section name={type}>
-          <ul className={`o-postList -${isFeatured ? 'vertical' : 'horizontal'}`}>
+          <div className={`o-postList -${isFeatured ? 'vertical' : 'horizontal'}`}>
             {getPosts(data)}
-          </ul>
+          </div>
         </Section>
       )}
     />

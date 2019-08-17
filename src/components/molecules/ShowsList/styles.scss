@@ -5,7 +5,7 @@
     max-height: 140px;
     overflow-y: auto;
 
-    @media (min-width: $bp-main) {
+    @media (min-width: $screen-mdd) {
       order: 2;
       width: 35%;
       max-width: 440px;
