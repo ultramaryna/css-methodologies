@@ -18,6 +18,7 @@ export const StyledPostBlock = styled.article`
 
 export const Img = styled.img`
     max-width: 100%;
+    width: 100%;
     margin-bottom: 20px;
     align-self: center;
     @media (min-width: ${breakpoints.bpMain}) {

@@ -40,7 +40,7 @@ const Artists = () => {
         `}
         render={data => (
             <Section color="purple">
-                <Container>
+                <Container id="artists">
                     <SlickSlider>
                         {renderArtists(data)}
                     </SlickSlider>

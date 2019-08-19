@@ -61,7 +61,7 @@ const Shows = ({showName, data}) => {
   }
 
   return (
-    <div>
+    <div id="repertoire">
       <Title color="tealLighter">
         <span>{show.name}</span>
       </Title>

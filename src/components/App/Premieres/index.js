@@ -37,7 +37,7 @@ const Premieres = () => {
       `}
       render={data => (
           <Section>
-            <PremieresWrapper>
+            <PremieresWrapper id="premieres">
                 <PremieresTitle>Premiery</PremieresTitle>
                 <PremieresList>
                     {renderPremieres(data)}
